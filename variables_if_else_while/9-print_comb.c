@@ -17,5 +17,6 @@ putchar (',');
 putchar(' ');
 };
 };
+putchar('$');
 	return (0);
 }
