@@ -1,11 +1,9 @@
 #include <stdio.h>
 /**
- * main - 5 otra vez
+ * main - one digit
  *
  *  Return: Always 0 (Success)
  */
-
-
 int main(void)
 {
 int i = 0;
