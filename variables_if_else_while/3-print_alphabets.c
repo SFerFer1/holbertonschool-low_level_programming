@@ -19,7 +19,7 @@ char alphabet = 'a';
 	while (alphabet <= 'Z')
 	{
 	putchar(alphabet);
-	alphabet--;
+	alphabet++;
 	}
 	putchar('\n');
 return (0);
