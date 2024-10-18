@@ -10,8 +10,15 @@ int main(void)
 
 	for (num = 0; num <= 15; num++)
 	{
-	printf("%x", num);
+	if (num < 10)
+	{
+	putchar(num + '0');
 	}
-	printf("\n");
+	else
+	{
+	putchar(num - 10 + 'a');
+	}
+	}
+	putchar('\n');
 	return (0);
 }
