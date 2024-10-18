@@ -1,14 +1,15 @@
-#include<stdio.h>
-/*
-main - Write script, 
- */
+i#include<stdio.h>
+
+
 int main(void)
 {
-char *variabletype[] = {"char", "unsigned char", "signed char", "int", "unsigned int", "short", "unsigned short", "long", "unsigned long", "long long", "unsigned long long"};
+char *variabletype[] = {"char",   "int",  "short",  "long",  "long long"};
 
-int i;
+gcc -m32 6-size.c -o size32
+
+
     for (i = 0; i < 11; ++i) {
-        // Use sizeof for the actual types instead of the string
+        
         printf("Size of %s is %zu\n", variabletype[i], sizeof(variabletype[i]));
     }        
 
