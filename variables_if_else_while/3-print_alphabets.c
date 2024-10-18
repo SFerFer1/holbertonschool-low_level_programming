@@ -15,7 +15,8 @@ char alphabet = 'a';
 	putchar(alphabet);
 	alphabet++;
 	}
-	while (toupper(alphabet) >= 'A')
+	alphabet = 'A';
+	while (alphabet >= 'Z')
 	{
 	putchar(alphabet);
 	alphabet--;
