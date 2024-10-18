@@ -1,6 +1,8 @@
 #include<stdio.h>
-/*
-main - Write script, 
+/**
+ * main - writ a script
+ *
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
