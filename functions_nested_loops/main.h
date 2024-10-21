@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	0-putchar.c();
+	void _putchar(char c);
+	void print_putchar(void); 
     return 0;
 }
