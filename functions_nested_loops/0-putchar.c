@@ -1,17 +1,39 @@
-#include <stdio.h>
+#include <unistd.h>
+#include "main.h"
 /**
- * main - print _putchar
+ * _putchar - print _putchar to
  *
- *  Return: Always 0 (Success)
+ *  Return:  0 always
  */
-int main(void)
+void _putchar(char c)
+{
+	write(1, &c, 1);
+}
+/**
+ * print_putchar - estructure
+ *
+ *  Return:  0
+ */
+void print_putchar(void)
 {
 	char string[] = "_putchar";
 
-	for (int i = 0; string[i] != '\0'; i++)
+	int i;
+
+	for (i = 0; string[i] != '\0'; i++)
 	{
-	putchar(string[i]);
+	_putchar(string[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
+}
+/**
+ * main - print _putchar
+ *
+ *  Return:  0 always
+ */
+int main(void)
+{
+
+	print_putchar();
 	return (0);
 }
