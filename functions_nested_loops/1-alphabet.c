@@ -13,7 +13,7 @@ void print_alphabet(void)
 	char i = 'a'; 
 
 
-	for (i = 'a'; i < 'z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
 	putchar(i);
 	};
@@ -21,13 +21,3 @@ void print_alphabet(void)
 	putchar('\n');
 }
 
-/**
-* main - i print it
-*
-*  Return:  0
-*/
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
