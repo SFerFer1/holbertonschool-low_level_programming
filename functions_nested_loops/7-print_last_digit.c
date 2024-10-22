@@ -11,6 +11,13 @@
 int print_last_digit(int n )
 {
 
+if (n == INT_MIN)
+    {
+        
+        return 8;
+    }
+
+
 
 if (n < 0)
 {
