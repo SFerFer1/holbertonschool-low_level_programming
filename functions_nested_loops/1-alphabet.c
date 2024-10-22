@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
-
 /**
  *  print_alphabet - how to print it
  *
@@ -21,3 +19,7 @@ void print_alphabet(void)
 	putchar('\n');
 }
 
+int main(void) {
+    print_alphabet();
+    return 0;
+}
