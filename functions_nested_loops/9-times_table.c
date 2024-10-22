@@ -11,13 +11,13 @@ void times_table(void)
 int length;
 int multiplo;
 int n=0;
-for(length=0 ; length <= 9;legth++)
+for(length=0 ; length <= 9;length++)
 
-for(multiplo=0 ; multiplo <= 10; multiplo;)
+for(multiplo=0 ; multiplo <= 10; multiplo++)
 {
 _putchar((n * multiplo) + '0');
 
 }
-n++
-_putchar('n/');
+n++;
+_putchar('\n');
 }	
