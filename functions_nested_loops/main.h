@@ -7,4 +7,4 @@ void print_alphabet_x10(void); /* Function to print the alphabet 10 times */
 int _putchar(char c);         /* Function to output a character */
 
 #endif /* MAIN_H */
-/
+
