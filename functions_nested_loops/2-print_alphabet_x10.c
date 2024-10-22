@@ -14,7 +14,28 @@ int n=0;
 
 for (n = 0 ; n < 10 ; i++)
 	{
-print_alphabet();
-_putchar('\n');
+
+for (i = 'a'; i <= 'z'; i++)
+	{
+        _putchar(i);
+	};
+
+        _putchar('\n');
 	}
 	}
+
+
+
+void print_alphabet(void)
+        {
+
+        char i = 'a';
+
+
+        for (i = 'a'; i <= 'z'; i++)
+        {
+        _putchar(i);
+        };
+
+        _putchar('\n');
+}
