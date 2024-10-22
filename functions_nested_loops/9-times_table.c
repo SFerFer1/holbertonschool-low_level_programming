@@ -12,12 +12,13 @@ int length;
 int multiplo;
 int n=0;
 for(length=0 ; length <= 9;length++)
+{
 
 for(multiplo=0 ; multiplo <= 10; multiplo++)
 {
 _putchar((n * multiplo) + '0');
-
 }
-n++;
 _putchar('\n');
+n++;
+}
 }	
