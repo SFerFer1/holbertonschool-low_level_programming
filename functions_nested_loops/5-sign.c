@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  *  print_sign - is positive negative or zero
- * @c: int c es un numero
+ * @n: int n es un numero cualquiera
  *
  *  Return:  1 = positive 0 = is zerro -1 = is negative
  */
@@ -15,12 +15,13 @@ if (n > 0)
 _putchar('+');
 return (1);
 }
-else if (n == 0 ) 
+else if (n == 0)
 {
 _putchar('0');
 return (0);
 }
-else {
+else
+{
 _putchar('-');
 return (-1);
 
