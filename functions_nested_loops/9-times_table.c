@@ -25,10 +25,12 @@ if (resultado>= 10 && resultado <= 99)
 }
 else
 {
+if(multiplo != 0 ){
 _putchar(' ');
+}
 _putchar('0'+ (resultado));
 }
-if(multiplo != 9)
+if(multiplo != 9 )
         {
         _putchar(',');
         _putchar(' ');
