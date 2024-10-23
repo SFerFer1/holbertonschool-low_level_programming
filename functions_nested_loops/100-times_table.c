@@ -1,53 +1,34 @@
 #include "main.h"
 /**
- *  times_table - prints time table
+ * print_times_table - prints the times table up to n
+ * @n: the size of the times table
  *
- *  Return: void
+ * Return: void
  */
 void print_times_table(int n)
 {
-int length, multiplo, resultado, valorn=n;
+    int length, multiplo, resultado;
 
-if(n == 0)
-{
-_putchar('0');
-_putchar('\n');
-}
-if (n < 15 && n > 0){	
-for (length = 0 ; length <= valorn; length++)
-{
-for (multiplo = 0 ; multiplo < (valorn+1) ; multiplo++)
-{
-        resultado = length * multiplo;
-if (resultado >= 10 && resultado <= 99)
-{
-	_putchar(' ');
-        _putchar('0' + (resultado / 10));
-        _putchar('0' + (resultado % 10));
-}
-else if (resultado >= 100 && resultado <= 999)
-{
-	_putchar('0' + (resultado / 100));      
-	_putchar('0' + (resultado / 10) % 10);
-	_putchar('0' + (resultado % 10));        
-}
-else
-{
-if (multiplo != 0)
-{
-_putchar(' ');	
-_putchar(' ');
-}
-_putchar('0' + (resultado));
-}
-if (multiplo != valorn)
+    if (n < 0 || n > 15)
+        return;
+
+    for (length = 0; length <= n; length++)
+    {
+        for (multiplo = 0; multiplo <= n; multiplo++)
         {
-        _putchar(',');
-        _putchar(' ');
+            resultado = length * multiplo;
+
+            if (multiplo != 0)
+                _putchar(',');
+
+            if (resultado < 10)
+                _putchar(' '), _putchar(' '), _putchar('0' + resultado);
+            else if (resultado < 100)
+                _putchar(' '), _putchar('0' + resultado / 10), _putchar('0' + resultado % 10);
+            else
+                _putchar('0' + resultado / 100), _putchar('0' + (resultado / 10) % 10), _putchar('0' + resultado % 10);
         }
+        _putchar('\n');
+    }
 }
-_putchar('\n');
-n++;
-}
-}
-}
+
