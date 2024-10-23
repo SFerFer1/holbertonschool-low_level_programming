@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *  times_table - prints time table
  *
@@ -9,7 +8,6 @@ void print_times_table(int n)
 {
 int length, multiplo, resultado, valorn=n;
 
-printf("a");
 if(n == 0)
 {
 _putchar('0');
