@@ -22,5 +22,6 @@ cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
 }
+printf("\n")
 return (0);
 }
