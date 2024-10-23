@@ -13,7 +13,10 @@ long valoranterior = 2;
 long cambiovalor;
 for (i = 0; i < 50  ; i++)
 {
-
+if (i > 0)
+{
+	printf(",");
+}
 printf(" %ld", valoractual);
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
