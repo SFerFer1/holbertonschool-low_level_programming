@@ -22,9 +22,10 @@ if (resultado>= 10 && resultado <= 99)
 {
 	_putchar((resultado / 10) + '0');
 	_putchar((resultado % 10) + '0');
-	if(length != 9){
+	if(length != 9)
+	{
 	_putchar(',');
-	_putchar(' '),
+	_putchar(' ');
 	}
 }
 else
