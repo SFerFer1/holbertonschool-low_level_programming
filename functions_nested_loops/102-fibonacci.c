@@ -15,7 +15,7 @@ for (i = 0; i < 50  ; i++)
 {
 if (i > 0 && i != 50)
 {
-	printf(",");
+	printf(", ");
 }
 printf("%ld", valoractual);
 cambiovalor = valoractual + valoranterior;
