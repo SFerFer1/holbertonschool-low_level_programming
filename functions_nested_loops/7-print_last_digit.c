@@ -17,14 +17,14 @@ int print_last_digit(int n )
 
 if (last < 0)
 {
-n = n * -1;
+last = last * -1;
 }
  
 
 
 
  
-
+_putchar(last + '0' )
 
 return (last);
 }
