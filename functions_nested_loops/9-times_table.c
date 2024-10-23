@@ -15,14 +15,14 @@ int resultado;
 for(length=0 ; length <= 9;length++)
 {
 
-for(multiplo=0 ; multiplo <= 10; multiplo++)
+for(multiplo=0 ; multiplo < 10; multiplo++)
 {
 	resultado =n * multiplo; 
 if (resultado>= 10 && resultado <= 99)
 {
-	_putchar((resultado / 10) + '0');
-	_putchar((resultado % 10) + '0');
-	if(multiplo != 10)
+	_putchar('0' + (resultado / 10));
+	_putchar('0' + (resultado % 10));
+	if(multiplo != 9)
 	{
 	_putchar(',');
 	_putchar(' ');
@@ -30,12 +30,16 @@ if (resultado>= 10 && resultado <= 99)
 }
 else
 {
-_putchar((resultado) + '0');
-_putchar(',');
-_putchar(' ');
+_putchar('0'+ (resultado));
+ if(multiplo != 9)
+ 	{
+	_putchar(',');
+	_putchar(' ');
+	}
 }
 }
 _putchar('\n');
 n++;
 }
+
 }	
