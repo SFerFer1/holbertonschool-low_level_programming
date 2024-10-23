@@ -8,7 +8,7 @@
 int main(void)
 {
 int i;
-long valoractual = 0;
+long valoractual = 1;
 long valoranterior = 1;
 long cambiovalor;
 for (i = 0; i < 50  ; i++)
