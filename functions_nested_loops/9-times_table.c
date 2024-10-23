@@ -22,21 +22,17 @@ if (resultado>= 10 && resultado <= 99)
 {
 	_putchar('0' + (resultado / 10));
 	_putchar('0' + (resultado % 10));
-	if(multiplo != 9)
-	{
-	_putchar(',');
-	_putchar(' ');
-	}
 }
 else
 {
+_putchar(' ');
 _putchar('0'+ (resultado));
- if(multiplo != 9)
- 	{
-	_putchar(',');
-	_putchar(' ');
-	}
 }
+if(multiplo != 9)
+        {
+        _putchar(',');
+        _putchar(' ');
+        }
 }
 _putchar('\n');
 n++;
