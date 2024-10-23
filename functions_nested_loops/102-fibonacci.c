@@ -17,7 +17,7 @@ if (i > 0 && i != 50)
 {
 	printf(",");
 }
-printf("%ld ", valoractual);
+printf("%ld", valoractual);
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
