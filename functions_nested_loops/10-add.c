@@ -3,11 +3,12 @@
 /**
  *  add - hace el calculo con las variables recibidas
  *
- *@n: int n es un numero cualquiera
+ *@a: int a es un numero para sumar
+ *@b: int a es un numero para sumar
  *
  *  Return: int un resultado
  */
-int add(int a , int b )
+int add(int a, int b)
 {
 int resultado;
 
