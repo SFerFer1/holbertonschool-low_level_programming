@@ -13,7 +13,8 @@ int inicio;
 
 if (valor == 98)
 {
-printf("98\n");
+last_digit = 8;
+_putchar(last_digit + '0');
 
 }
 else if (valor < 98)
