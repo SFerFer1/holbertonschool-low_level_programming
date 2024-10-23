@@ -29,6 +29,7 @@ for (inicio = valor ; inicio <= 98; inicio++)
 	printf(", ");
 	}
 }
+printf("\n");
 }
 else {
 
