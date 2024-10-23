@@ -6,11 +6,9 @@
  */
 void print_times_table(int n)
 {
-int length;
-int multiplo;
-int resultado;
-int valorn=n;
+int length, multiplo, resultado, valorn=n;
 
+printf("a");
 if(n == 0)
 {
 _putchar('0');
