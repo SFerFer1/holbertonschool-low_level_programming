@@ -10,7 +10,16 @@ int length;
 int multiplo;
 int resultado;
 int valorn=n;
+
+if(n==0)
+{
+_putchar('0');
+}
+
+
 if (n < 15 && n > 0){
+
+	
 for (length = 0 ; length <= valorn; length++)
 {
 
