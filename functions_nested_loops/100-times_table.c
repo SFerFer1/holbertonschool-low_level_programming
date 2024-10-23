@@ -38,7 +38,7 @@ _putchar(' ');
 }
 _putchar('0' + (resultado));
 }
-if (multiplo != n)
+if (multiplo != valorn)
         {
         _putchar(',');
         _putchar(' ');
