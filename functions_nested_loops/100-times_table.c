@@ -11,7 +11,7 @@ int multiplo;
 int resultado;
 
 if (n < 15 && n > 0){
-for (length = 0 ; length <= n; length++)
+for (length = 0 ; length <= 2; length++)
 {
 
 for (multiplo = 0 ; multiplo < n ; multiplo++)
