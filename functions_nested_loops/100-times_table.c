@@ -19,17 +19,18 @@ for (multiplo = 0 ; multiplo < (valorn+1) ; multiplo++)
         resultado = length * multiplo;
 if (resultado >= 10 && resultado <= 99)
 {
+	_putchar(' ');
         _putchar('0' + (resultado / 10));
         _putchar('0' + (resultado % 10));
 }
-/**
+
 else if (resultado >= 100 && resultado <= 999)
 {
 _putchar('0' + (resultado / 10));
 _putchar('0' + (resultado / 10) % 10);
 _putchar('0' + (resultado % 10));
 }
-**/
+
 else
 {
 if (multiplo != 0)
