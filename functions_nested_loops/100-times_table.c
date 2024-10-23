@@ -14,7 +14,7 @@ if (n < 15 && n > 0){
 for (length = 0 ; length <= n; length++)
 {
 
-for (multiplo = 0 ; multiplo < 10; multiplo++)
+for (multiplo = 0 ; multiplo < n ; multiplo++)
 {
         resultado = n * multiplo;
 if (resultado >= 10 && resultado <= 99)
@@ -37,7 +37,7 @@ _putchar(' ');
 }
 _putchar('0' + (resultado));
 }
-if (multiplo != 9)
+if (multiplo != n)
         {
         _putchar(',');
         _putchar(' ');
