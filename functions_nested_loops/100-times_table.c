@@ -14,7 +14,7 @@ if (n < 15 && n > 0){
 for (length = 0 ; length <= valorn; length++)
 {
 
-for (multiplo = 0 ; multiplo < valorn ; multiplo++)
+for (multiplo = 0 ; multiplo < (valorn+1) ; multiplo++)
 {
         resultado = length * multiplo;
 if (resultado >= 10 && resultado <= 99)
