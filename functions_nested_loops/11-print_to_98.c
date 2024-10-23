@@ -30,7 +30,7 @@ for (inicio = valor ; inicio <= 98; inicio++)
 	}
 }
 }
-else (valor > 98 ){
+else {
 
 for (inicio = valor ; inicio >= 98; inicio--)
 {
