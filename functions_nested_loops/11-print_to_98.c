@@ -16,7 +16,7 @@ int inicio;
 
 if(valor == 98)
 {
-printf("98");
+printf("98\n");
 
 }
 else if(valor < 98){
