@@ -11,17 +11,20 @@
 
 int print_last_digit(int n )
 {
-if (n == INT_MIN) {
-	n = INT_MIN + 1;
-}
+	int last = n % 10;
 
 
-if (n < 0)
+
+if (last < 0)
 {
 n = n * -1;
 }
- n = n % 10; 
- _putchar(n + '0');
+ 
 
-return (n);
+
+
+ 
+
+
+return (last);
 }
