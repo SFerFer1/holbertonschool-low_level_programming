@@ -11,10 +11,10 @@ int add(int a , int b )
 {
 int resultado;
 
-resultado = a + b
+resultado = a + b;
 
 
 
 
-return (resultado)
+return (resultado);
 }
