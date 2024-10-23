@@ -9,9 +9,9 @@ void print_times_table(int n)
 int length;
 int multiplo;
 int resultado;
-
+int valorn=n;
 if (n < 15 && n > 0){
-for (length = 0 ; length <= 2; length++)
+for (length = 0 ; length <= valorn; length++)
 {
 
 for (multiplo = 0 ; multiplo < n ; multiplo++)
