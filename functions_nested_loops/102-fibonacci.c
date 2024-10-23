@@ -14,7 +14,7 @@ long cambiovalor;
 for (i = 0; i < 50  ; i++)
 {
 
-printf(" %ld\n", valoractual);
+printf(" %ld, ", valoractual);
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
