@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 #include "main.h"
 /**
  *  print_last_digit - return las digit 
@@ -11,7 +12,9 @@
 int print_last_digit(int n )
 {
 
-
+if (n == INT_MIN) {
+	n = INT_MIN + 1; 
+    }
 
 
 if (n < 0)
