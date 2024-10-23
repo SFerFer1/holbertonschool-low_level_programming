@@ -14,6 +14,12 @@ void print_to_98(int n)
 int valor = n;
 int inicio;
 
+if(valor == 98)
+{
+printf("98");
+
+}
+
 if(valor < 98){
 
 for (inicio = valor ; inicio <= 98; inicio++)
