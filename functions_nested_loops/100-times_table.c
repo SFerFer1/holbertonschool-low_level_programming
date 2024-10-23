@@ -16,7 +16,7 @@ for (length = 0 ; length <= valorn; length++)
 
 for (multiplo = 0 ; multiplo < valorn ; multiplo++)
 {
-        resultado = n * multiplo;
+        resultado = length * multiplo;
 if (resultado >= 10 && resultado <= 99)
 {
         _putchar('0' + (resultado / 10));
