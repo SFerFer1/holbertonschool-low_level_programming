@@ -34,6 +34,7 @@ else
 {
 if (multiplo != 0)
 {
+_putchar(' ');	
 _putchar(' ');
 }
 _putchar('0' + (resultado));
