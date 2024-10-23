@@ -19,8 +19,7 @@ if(valor == 98)
 printf("98");
 
 }
-
-if(valor < 98){
+else if(valor < 98){
 
 for (inicio = valor ; inicio <= 98; inicio++)
 {
@@ -31,7 +30,7 @@ for (inicio = valor ; inicio <= 98; inicio++)
 	}
 }
 }
-if (valor > 98 ){
+else (valor > 98 ){
 
 for (inicio = valor ; inicio >= 98; inicio--)
 {
