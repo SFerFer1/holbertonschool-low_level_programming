@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - until
  *
@@ -7,25 +6,27 @@
  */
 int main(void)
 {
-int i;
-unsigned long valoractual = 1;
-unsigned long valoranterior = 2;
-unsigned long cambiovalor;
+    unsigned long valoractual = 1;
+    unsigned long valoranterior = 2;
+    unsigned long cambiovalor;
+    int i;
 
-	printf("%lu", valoractual);
-for (i = 0; i < 98 ; i++)
-{
+    printf("%lu", valoractual);
 
-	printf(", %lu", valoranterior);
+    for (i = 1; i < 92; i++)
+    {
+        if (i == 1) {
+            printf(", %lu", valoranterior);
+            continue;
+        }
 
-printf("%lu", valoractual);
-cambiovalor = valoractual + valoranterior;
-valoractual = valoranterior;
-valoranterior = cambiovalor;
-}
-printf("\n");
-return (0);
+        cambiovalor = valoractual + valoranterior;
+        printf(", %lu", cambiovalor);
 
+        valoractual = valoranterior;
+        valoranterior = cambiovalor;
+    }
 
-
+    printf("\n");
+    return (0);
 }
