@@ -20,7 +20,7 @@ while (valortotal < 4000000)
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
-valortotal = cambiovalor;
+valortotal += cambiovalor;
 }
 printf("%ld\n", valortotal);
 
