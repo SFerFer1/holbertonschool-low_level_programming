@@ -21,7 +21,7 @@ void print_times_table(int n)
             if (multiplo != 0)
                 _putchar(',');
 	 if (multiplo == 0 )
-	 _putchar('0'), _putchar(' '),_putchar(' '); 
+	 _putchar('0'); 
 	    else if (resultado < 10 )
                 _putchar(' '), _putchar(' '), _putchar('0' + resultado);
             else if (resultado < 100)
