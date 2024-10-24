@@ -5,7 +5,6 @@
  *
  *  Return: void
  */
-
 void times_table(void)
 {
 int length;
@@ -40,5 +39,4 @@ if (multiplo != 9)
 _putchar('\n');
 n++;
 }
-
 }
