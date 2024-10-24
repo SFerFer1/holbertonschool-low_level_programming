@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- * main - until
+ * main - Generate Fibonacci sequence
  *
  * Return: 0
  */
@@ -11,15 +12,10 @@ int main(void)
     unsigned long cambiovalor;
     int i;
 
-    printf("%lu", valoractual);
+    printf("%lu, %lu", valoractual, valoranterior);
 
-    for (i = 1; i < 92; i++)
+    for (i = 2; i < 100; i++) 
     {
-        if (i == 1) {
-            printf(", %lu", valoranterior);
-            continue;
-        }
-
         cambiovalor = valoractual + valoranterior;
         printf(", %lu", cambiovalor);
 
@@ -30,3 +26,4 @@ int main(void)
     printf("\n");
     return (0);
 }
+
