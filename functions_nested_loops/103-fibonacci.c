@@ -13,7 +13,7 @@ long valoranterior = 2;
 long cambiovalor;
 long valortotal;
 
-while (cambiovalor < 4000000)
+while (valoractual < 4000000)
 {       
 
 if (valoractual % 2 == 0)
