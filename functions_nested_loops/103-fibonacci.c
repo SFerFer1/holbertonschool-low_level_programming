@@ -12,17 +12,16 @@ int main(void)
 long valoractual = 1;
 long valoranterior = 2;
 long cambiovalor;
+long valortotal;
 
-do
-{
-if (cambiovalor < 4000000) // Verificamos antes de imprimir
-        {
-            printf("%ld\n", cambiovalor);
-        }
-        valoranterior = valoractual;
-        valoractual = cambiovalor;
+while (cambiovalor < 4000000)
+{       
+	valortotal = valoractual;
+cambiovalor = valoractual + valoranterior;
+valoractual = valoranterior;
+valoranterior = cambiovalor;
 }
-while (cambiovalor < 4000000);
+printf("%ld\n", valortotal);
 
 
 
