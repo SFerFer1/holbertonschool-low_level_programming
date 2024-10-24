@@ -13,12 +13,13 @@ long valoractual = 1;
 long valoranterior = 2;
 long cambiovalor;
 
-while (cambiovalor < 4000000)
+do
 {
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
 }
+while (cambiovalor < 4000000);
 
 printf("%ld\n", cambiovalor);
 
