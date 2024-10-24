@@ -12,7 +12,7 @@ unsigned long valoractual = 1;
 unsigned long valoranterior = 2;
 unsigned long cambiovalor;
 
-	printf("%lld", valoractual);
+	printf("%lu", valoractual);
 for (i = 0; i < 98 ; i++)
 {
 
