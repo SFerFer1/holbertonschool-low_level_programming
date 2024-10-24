@@ -14,12 +14,13 @@ long valoranterior = 2;
 long cambiovalor;
 long valortotal;
 
-while (cambiovalor < 4000000)
+while (valortotal < 4000000)
 {       
-	valortotal = valoractual;
+
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
+valortotal = cambiovalor;
 }
 printf("%ld\n", valortotal);
 
