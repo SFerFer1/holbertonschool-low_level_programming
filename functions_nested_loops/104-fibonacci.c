@@ -8,14 +8,15 @@
 int main(void)
 {
 int i;
-long valoractual = 1;
-long valoranterior = 2;
-long cambiovalor;
+unsigned long valoractual = 1;
+unsigned long valoranterior = 2;
+unsigned long cambiovalor;
+
+	printf("%lld", valoractual);
 for (i = 0; i < 98 ; i++)
 {
 
-
-        printf(", ");
+	printf(", %lld", valoranterior);
 
 printf("%ld", valoractual);
 cambiovalor = valoractual + valoranterior;
