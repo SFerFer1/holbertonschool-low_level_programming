@@ -15,13 +15,16 @@ long cambiovalor;
 
 do
 {
-cambiovalor = valoractual + valoranterior;
-valoractual = valoranterior;
-valoranterior = cambiovalor;
+if (cambiovalor < 4000000) // Verificamos antes de imprimir
+        {
+            printf("%ld\n", cambiovalor);
+        }
+        valoranterior = valoractual;
+        valoractual = cambiovalor;
 }
 while (cambiovalor < 4000000);
 
-printf("%ld\n", cambiovalor);
+
 
 
 return (0);
