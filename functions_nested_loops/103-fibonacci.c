@@ -14,7 +14,7 @@ long valoranterior = 2;
 long cambiovalor;
 long valortotal;
 
-while (valortotal < 4000000)
+while (cambiovalor < 4000000)
 {       
 
 cambiovalor = valoractual + valoranterior;
