@@ -16,9 +16,9 @@ unsigned long cambiovalor;
 for (i = 0; i < 98 ; i++)
 {
 
-	printf(", %lld", valoranterior);
+	printf(", %lu", valoranterior);
 
-printf("%ld", valoractual);
+printf("%lu", valoractual);
 cambiovalor = valoractual + valoranterior;
 valoractual = valoranterior;
 valoranterior = cambiovalor;
