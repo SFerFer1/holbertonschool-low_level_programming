@@ -1,6 +1,2 @@
 #!/bin/bash
-
-input_file="$1"
-output_file="$2
-
 gcc -S $CFILE -o "$output_file" "$input_file"
