@@ -8,13 +8,13 @@
 int main(void)
 {
     unsigned long valoractual = 1;
-    unsigned long valoranterior = 2;
+    unsigned long valoranterior = 1;
     unsigned long cambiovalor;
     int i;
 
 
-printf("%lu", valoractual);
-	printf(", %lu", valoranterior);
+printf("%lu", valoranterior);
+	printf(", %lu", valoractual);
 
 
 
@@ -23,8 +23,8 @@ printf("%lu", valoractual);
         cambiovalor = valoractual + valoranterior;
         printf(", %lu", cambiovalor);
 
-        valoractual = valoranterior;
-        valoranterior = cambiovalor;
+         valoranterior =valoractual;
+        valoractual = cambiovalor;
     }
 
     printf("\n");
