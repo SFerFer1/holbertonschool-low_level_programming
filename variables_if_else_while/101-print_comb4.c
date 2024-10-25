@@ -16,12 +16,11 @@ for (n = i + 1 ; n < 10; n++)
 
 for (t = n + 1 ; t < 10; n++)
 {
-	if (n != i && i != t &&t != n )
-	{
+
 	putchar (i + '0');
 	putchar (n + '0');
 	putchar (t + '0');
-	}
+	
 
 if (i != 9 || n != 8 || t != 7 )
 {
