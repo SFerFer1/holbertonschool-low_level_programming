@@ -23,7 +23,7 @@ for (n = i + 1 ; n < 10; n++)
 
 		putchar((n / 10) + '0');
 		putchar((n % 10) + '0');
-		if (i != 8 || n != 9)
+		if (i != 98 || n != 89)
 		{
 			putchar (',');
 			putchar(' ');
