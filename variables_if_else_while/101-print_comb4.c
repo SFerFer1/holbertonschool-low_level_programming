@@ -14,7 +14,7 @@ for (i = 0; i < 10; i++)
 for (n = i + 1 ; n < 10; n++)
 {
 
-for (t = n + 1 ; n < 10; n++)
+for (t = n + 1 ; t < 10; n++)
 {
 	if (n != i && i != t &&t != n )
 	{
