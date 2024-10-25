@@ -28,6 +28,7 @@ for (n = i+1; n < 10; n++)
 		}
 	}
 }
+putchar('\n');
 return (0);
 
 
