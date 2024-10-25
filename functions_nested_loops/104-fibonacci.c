@@ -14,7 +14,7 @@ int main(void)
 
     printf("%lu, %lu", valoractual, valoranterior);
 
-    for (i = 1; i <= 92; i++) 
+    for (i = 1; i < 100; i++) 
     {
         cambiovalor = valoractual + valoranterior;
         printf(", %lu", cambiovalor);
