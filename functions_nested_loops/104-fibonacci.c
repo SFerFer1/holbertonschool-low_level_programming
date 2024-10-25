@@ -18,7 +18,6 @@ int main(void)
 	printf(", %lu", valoractual);
 
 
-    printf("%lu, %lu", valoractual, valoranterior);
 
     for (i = 2; i < 98; i++) 
     {
