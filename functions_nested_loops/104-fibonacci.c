@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    unsigned long valoractual = 1;
+    unsigned long valoractual = 2;
     unsigned long valoranterior = 1;
     unsigned long cambiovalor;
     int i;
