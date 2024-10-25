@@ -14,7 +14,7 @@ for (i = 0; i < 10; i++)
 for (n = i + 1 ; n < 10; n++)
 {
 
-for (t = n + 1 ; t < 10; n++)
+for (t = n + 1 ; t < 10; t++)
 {
 
 	putchar (i + '0');
@@ -22,7 +22,7 @@ for (t = n + 1 ; t < 10; n++)
 	putchar (t + '0');
 	
 
-if (i != 9 || n != 8 || t != 7 )
+if (i != 7 || n != 8 || t != 9 )
 {
 	putchar (',');
        	putchar(' ');
