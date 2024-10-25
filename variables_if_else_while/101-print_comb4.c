@@ -24,6 +24,7 @@ for (t = n + 1 ; n < 10; n++)
 	}
 
 if (i != 9 || n != 8 || t != 7 )
+{
 	putchar (',');
        	putchar(' ');
 }
