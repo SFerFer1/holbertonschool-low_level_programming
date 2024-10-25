@@ -34,6 +34,7 @@ if (i != 9 || n != 8 || t != 7 )
 
 }                        
 }
+}
 putchar('\n');
 return (0);
 
