@@ -14,10 +14,10 @@ int main(void)
 
     printf("%lu, %lu", valoractual, valoranterior);
 
-    for (i = 2; i < 100; i++) 
+    for (i = 2; i <= 93; i++) 
     {
         cambiovalor = valoractual + valoranterior;
-        printf(",%lu", cambiovalor);
+        printf(", %lu", cambiovalor);
 
         valoractual = valoranterior;
         valoranterior = cambiovalor;
