@@ -7,14 +7,20 @@
  */
 int main(void)
 {
-    unsigned long valoractual = 2;
-    unsigned long valoranterior = 1;
+    unsigned long valoractual = 1;
+    unsigned long valoranterior = 2;
     unsigned long cambiovalor;
     int i;
 
+
+
+	printf("%lu", valoranterior);
+	printf(", %lu", valoractual);
+
+
     printf("%lu, %lu", valoractual, valoranterior);
 
-    for (i = 1; i < 98; i++) 
+    for (i = 2; i < 98; i++) 
     {
         cambiovalor = valoractual + valoranterior;
         printf(", %lu", cambiovalor);
@@ -26,4 +32,3 @@ int main(void)
     printf("\n");
     return (0);
 }
-
