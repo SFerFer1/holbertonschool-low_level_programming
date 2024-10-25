@@ -1,32 +1,25 @@
 #include <stdio.h>
 
-/**
- * main - Generate Fibonacci sequence
- *
- * Return: 0
- */
 int main(void)
 {
-    unsigned long valoractual = 1;
-    unsigned long valoranterior = 1;
-    unsigned long cambiovalor;
+    unsigned long valor1 = 1, valor2 = 2, siguiente;
     int i;
 
+    printf("%lu", valor1); 
 
-printf("%lu", valoranterior);
-	printf(", %lu", valoractual);
+    printf(", %lu", valor2);
 
-
-
-    for (i = 2; i < 98; i++) 
+    
+    for (i = 2; i < 98; i++)
     {
-        cambiovalor = valoractual + valoranterior;
-        printf(", %lu", cambiovalor);
+        siguiente = valor1 + valor2;
+        printf(", %lu", siguiente);
 
-         valoractual = valoranterior;
-        valoranterior = cambiovalor;
+        valor1 = valor2;
+        valor2 = siguiente;
     }
 
     printf("\n");
-    return (0);
+    return 0;
 }
+
