@@ -18,7 +18,6 @@ for (n = i + 1 ; n < 100; n++)
 		{
 		putchar((i / 10) + '0');
 		putchar((i % 10) + '0');
-		
 		putchar(' ');
 
 		putchar((n / 10) + '0');
@@ -31,9 +30,9 @@ for (n = i + 1 ; n < 100; n++)
 		}
 		}
 
-		}	
+		}
 putchar('\n');
 return (0);
 
 
-} 
+}
