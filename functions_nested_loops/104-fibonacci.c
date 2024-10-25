@@ -13,9 +13,8 @@ int main(void)
     int i;
 
 
-
+printf(", %lu", valoractual);
 	printf("%lu", valoranterior);
-	printf(", %lu", valoractual);
 
 
 
