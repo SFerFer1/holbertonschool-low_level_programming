@@ -8,11 +8,11 @@ int main(void)
 {
 int i;
 int n;
-for (i = 0; i < 100; i++)
+for (i = 0; i < 10; i++)
 {
 
 
-for (n = i + 1 ; n < 100; n++)
+for (n = i + 1 ; n < 10; n++)
 {
 	if (n != i)
 		{
