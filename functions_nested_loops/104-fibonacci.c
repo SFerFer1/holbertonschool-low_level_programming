@@ -23,8 +23,8 @@ printf("%lu", valoranterior);
         cambiovalor = valoractual + valoranterior;
         printf(", %lu", cambiovalor);
 
-         valoranterior =valoractual;
-        valoractual = cambiovalor;
+         valoractual = valoranterior;
+        valoranterior = cambiovalor;
     }
 
     printf("\n");
