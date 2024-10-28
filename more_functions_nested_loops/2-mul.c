@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - see number between a and b
+ * mul - multiplies two numbers
  *
  *@a: int a es un numero cualquiera
  *@b: int b es un numero cualquiera
