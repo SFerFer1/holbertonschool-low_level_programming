@@ -15,6 +15,9 @@ else
 {
 for (i = 0 ; i < n ; i++)
 {
+for (t = 0 ; t < n ; n++)
+_putchar(' ');
+
 _putchar('\\');
 _putchar('\n');
 }
