@@ -19,7 +19,7 @@ for (i = 0 ; i < size ; i++)
 
 for (i = 0 ; i < size ; i++)
 {
-_putchar('#');
+_putchar("\#");
 
 }
 _putchar('\n');
