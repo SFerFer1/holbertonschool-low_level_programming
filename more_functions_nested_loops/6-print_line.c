@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *  print_line - print _ n times
- *
+ *@n: int cualquier numero
  *  Return: nothing
  */
 void print_line(int n)
