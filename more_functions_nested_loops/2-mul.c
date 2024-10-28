@@ -13,9 +13,6 @@ int mul(int a, int b)
 int resultado;
 
 resultado = a * b;
-if (resultado == 4)
-{
-resultado = 4;	
-}
-return (0);
+
+return (resultado);
 }
