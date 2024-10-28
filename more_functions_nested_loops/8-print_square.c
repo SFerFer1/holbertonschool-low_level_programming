@@ -16,10 +16,10 @@ else
 {
 for (i = 0 ; i < size ; i++)
 {
-_putchar("/#");
+putchar("#");
 for (i = 0 ; i < size ; i++)
 {
-_putchar("/#");
+putchar("#");
 
 }
 }
