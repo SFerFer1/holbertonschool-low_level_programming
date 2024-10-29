@@ -16,16 +16,23 @@ _putchar('\n');
 }
 else 
 {
-for (i = size ; i > 0 ; i--)
+for (i = 1 ; i <= size ; i++)
 {
+n = size - i;
 while (t < n)
 {
 _putchar(' ');
-t++;
 }
+for (j = 0 ; j < i)
+{
 _putchar('#');
-n++;
 }
+_putchar('\n');
+{
+
+}
+}
+
 }
 
 }
