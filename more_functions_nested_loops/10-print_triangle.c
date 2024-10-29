@@ -16,7 +16,7 @@ _putchar('\n');
 }
 else 
 {
-for (i = size ; i > 0 ; i++)
+for (i = size ; i > 0 ; i--)
 {
 while (t < n)
 {
