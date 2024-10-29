@@ -6,9 +6,11 @@
 */
 void _puts(char *str)
 {
-
-
-
+while (s[i] != 0)
+{
+printf ("%d" , str)
+i++;
+}
 
 
 }
