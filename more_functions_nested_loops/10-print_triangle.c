@@ -27,6 +27,7 @@ t++;
 for (j = 0 ; j < i ; j++)
 {
 _putchar('#');
+t = 0;
 }
 _putchar('\n');
 {
