@@ -20,7 +20,7 @@ for (i = size ; i > 0 ; i++)
 {
 while (t < n)
 {
-_putchar('#');
+_putchar(' ');
 n++;
 }
 _putchar('#');
