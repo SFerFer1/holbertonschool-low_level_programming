@@ -22,9 +22,12 @@ else if (i % 3 == 0)
 	printf(" ");
 	}
 else if (i % 5 == 0)
-{
-        printf("Buzz");
+{      
+	printf("Buzz");
+	if (i != 100)
+	{
 	printf(" ");
+	}
 }
 else 
 {
