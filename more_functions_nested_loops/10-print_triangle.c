@@ -9,7 +9,7 @@ void print_triangle(int size)
 int i;
 int n = 0;
 int t = 0;
-
+int j;
 if (size <= 0)
 {
 _putchar('\n');
@@ -23,7 +23,7 @@ while (t < n)
 {
 _putchar(' ');
 }
-for (j = 0 ; j < i)
+for (j = 0 ; j < i ; j++)
 {
 _putchar('#');
 }
