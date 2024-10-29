@@ -22,6 +22,7 @@ n = size - i;
 while (t < n)
 {
 _putchar(' ');
+t++;
 }
 for (j = 0 ; j < i ; j++)
 {
