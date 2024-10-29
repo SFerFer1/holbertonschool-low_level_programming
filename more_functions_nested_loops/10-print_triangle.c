@@ -21,9 +21,10 @@ for (i = size ; i > 0 ; i++)
 while (t < n)
 {
 _putchar(' ');
-n++;
+t++;
 }
 _putchar('#');
+n++;
 }
 }
 
