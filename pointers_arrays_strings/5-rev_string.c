@@ -26,7 +26,7 @@ for (i = j ; i >= 0 ; i--)
 s[n] = s[i];
 
 }
-n++
+n++;
 }
 _putchar('\n');
 }
