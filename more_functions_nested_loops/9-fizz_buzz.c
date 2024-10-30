@@ -24,8 +24,10 @@ else if (i % 3 == 0)
 else if (i % 5 == 0)
 {      
 	printf("Buzz");
+	if (i !=100)
+{
 	printf(" ");
-	
+}	
 }
 else 
 {
@@ -33,6 +35,6 @@ printf("%d " , i);
 
 }
 }
-
+putchar(10);
 return (0);
 }
