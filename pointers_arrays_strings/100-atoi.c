@@ -8,16 +8,17 @@
 */
 int ConocerSigno(char *s, int *i)
 {
-	int sign = 1;
+	
+	int lastSign = 1; 
     while (s[*i] == '-' || s[*i] == '+')
 {
 	if (s[*i] == '-')
 	{
-	sign *= -1;
+	lastSign *= -1;
 	}
 	(*i)++;
 }
-return sign;
+return lastSign;
 }
 /**
 *  _atoi - simulate aoti
