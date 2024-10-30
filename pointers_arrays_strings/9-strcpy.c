@@ -14,7 +14,7 @@ int i = 0;
 while([i] != '\0')
 {
 dest[i] = src[i];
-i++
+i++;
 }
 
 return (&dest)
