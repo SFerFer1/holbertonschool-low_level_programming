@@ -28,7 +28,7 @@ return 1;
 */
 int _atoi(char *s)
 {
-int i = 0, j = 0, signo = 1;
+int i = 0, j = 0;
 
 while (s[j] != '\0')
 {
@@ -39,27 +39,11 @@ if (j == 0)
 {
 return (0);
 }
-else
-{
 while (s[i] == ' ') 
 {
 	i++;
 }
-
-
-signo =ConocerSigno(s[i],i);
-
-for (i ; i < j ; i++)
-{
-
-
-s[i] = s[i] * signo ;
-
-}
-
-
-
-}
-}
 return (0);
 }
+
+
