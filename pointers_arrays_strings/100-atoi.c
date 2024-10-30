@@ -26,16 +26,16 @@ return 1;
 *  Return: char the pointer to dest
 *
 */
-
-
 int _atoi(char *s)
 {
-int i = 0, num = 0;
+int i = 0, num = 0, sign;
 
 while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 {
 	i++;
 }
+
+sign = ConocerSigno(s, &i);
 
 if (s[i] == '\0')
 {
@@ -49,7 +49,5 @@ while (s[i] >= '0' && s[i] <= '9') {
 }
 
 
-return (num);
+return (num * sign);
 }
-
-
