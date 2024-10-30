@@ -29,9 +29,10 @@ else if (i % 5 == 0)
 }
 else 
 {
-printf("%d" , i);
-printf(" "); 
+printf("%d " , i);
+
 }
 }
+
 return (0);
 }
