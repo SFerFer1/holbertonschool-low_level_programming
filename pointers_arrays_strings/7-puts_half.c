@@ -24,6 +24,6 @@ if(i > ((j / 2)-1))
 _putchar(str[i]);
 }
 }
-_putchar('\n');
+
 
 }
