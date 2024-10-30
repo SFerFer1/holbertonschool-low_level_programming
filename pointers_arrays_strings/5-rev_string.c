@@ -14,10 +14,10 @@ while (s[j] != '\0')
 j++;
 }
 
-while (s[n] != '\0')
+while (s[j] != '\0')
 {
-t=0
-for (i = j ; i >= 0 ; i--)
+t = 0;
+for (i = j-1 ; i >= 0 ; i--)
 {
 if(t ==0)
 {
