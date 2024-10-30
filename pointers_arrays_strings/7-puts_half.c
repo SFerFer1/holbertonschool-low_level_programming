@@ -18,16 +18,16 @@ j++;
 
 for (i = 0 ; i < j ; i++)
 {
-if( j % 2 == 0)
+if (j % 2 == 0)
 {
-if(i >= (j / 2))
+if (i >= (j / 2))
 {
 _putchar(str[i]);
 }
 }
 else
 {
-if(i  > ((j / 2)-2))
+if (i  > (j / 2))
 {
 _putchar(str[i]);
 }
