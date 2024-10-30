@@ -19,7 +19,7 @@ j--;
 while (i < j)
 {
 
-cambio = s[i]; 
+cambio = s[i];
 s[i] = s[j];
 s[j] = cambio;
 i++;
