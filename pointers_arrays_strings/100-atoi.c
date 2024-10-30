@@ -26,24 +26,30 @@ return 1;
 *  Return: char the pointer to dest
 *
 */
+
+
 int _atoi(char *s)
 {
-int i = 0, j = 0;
+int i = 0, num = 0;
 
-while (s[j] != '\0')
-{
-j++;
-}
-
-if (j == 0)
-{
-return (0);
-}
-while (s[i] == ' ') 
+while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 {
 	i++;
 }
+
+if (s[i] == '\0')
+{
 return (0);
+}
+
+
+while (s[i] >= '0' && s[i] <= '9') {
+	num = num * 10 + (s[i] - '0');
+	i++;
+}
+
+
+return (num);
 }
 
 
