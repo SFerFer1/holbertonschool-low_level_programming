@@ -16,7 +16,7 @@ j++;
 j--;
 j = j / 2;
 
-for (i = j ; i >= 0 ; i--)
+for (i = 0 ; i < j ; i++)
 {
 _putchar(str[i]);
 }
