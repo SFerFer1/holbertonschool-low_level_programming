@@ -1,5 +1,25 @@
 #include "main.h"
 /**
+*  ConocerSigno - saber el signo y devolverlo por -1
+*@s:a char
+*@i: a int
+*  Return:  -1 or 1
+*
+*/
+int ConocerSigno(char *s, int *i)
+{
+if (s[*i] == '-') 
+{
+        (*i)++;
+return -1;
+}
+else if (s[*i] == '+') 
+{
+        (*i)++;
+}
+return 1;
+}
+/**
 *  _atoi - simulate aoti
 *@s:a char
 *
@@ -25,22 +45,16 @@ while (s[i] == ' ')
 {
 	i++;
 }
-if (s[i] == '-')
-{
-signo =-1;
-i++;
-}
-else if (s[i] == '+')
-{
-signo =+1;
-i++;
-}
+
+
+signo =ConocerSigno(s[i],i);
+
 for (i ; i < j ; i++)
 {
-if (signo = 0)
-{
-s[i] = s[i];
-}
+
+
+s[i] = s[i] * signo ;
+
 }
 
 
