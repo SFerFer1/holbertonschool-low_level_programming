@@ -35,10 +35,17 @@ else if (s[i] == '+')
 signo =+1;
 i++;
 }
-while (dest[i] != '\0')
+for (i ; i < j ; i++)
 {
-dest[i] = src[i];
-i++;
+if (signo = 0)
+{
+s[i] = s[i];
+}
+
+
+
+
+
 }
 
 }
