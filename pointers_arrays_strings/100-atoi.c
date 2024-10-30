@@ -8,16 +8,16 @@
 */
 int ConocerSigno(char *s, int *i)
 {
-if (s[*i] == '-') 
+	int sign = 1;
+    while (s[*i] == '-' || s[*i] == '+')
 {
-        (*i)++;
-return -1;
+	if (s[*i] == '-')
+	{
+	sign *= -1;
+	}
+	(*i)++;
 }
-else if (s[*i] == '+') 
-{
-        (*i)++;
-}
-return 1;
+return sign;
 }
 /**
 *  _atoi - simulate aoti
@@ -28,7 +28,7 @@ return 1;
 */
 int _atoi(char *s)
 {
-int i = 0, num = 0, sign;
+int i = 0, num = 0, sign=1;
 
 while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 {
