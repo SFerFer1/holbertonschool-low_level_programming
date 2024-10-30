@@ -18,7 +18,7 @@ j--;
 
 for (i = 0 ; i < j ; i++)
 {
-if(i >= (j / 2))
+if(i > (j / 2))
 {
 _putchar(str[i]);
 }
