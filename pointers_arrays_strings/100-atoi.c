@@ -38,6 +38,11 @@ while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 
 sign = ConocerSigno(s, &i);
 
+while (s[i] == ' ')/*verifica si hay espacios en blanco*/
+{
+        i++;
+}
+
 if (s[i] == '\0')
 {
 return (0);
