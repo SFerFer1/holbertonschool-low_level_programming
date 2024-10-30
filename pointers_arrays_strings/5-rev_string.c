@@ -14,13 +14,11 @@ while (s[j] != '\0')
 j++;
 }
 
+for (i = j ; i >= 0 ; i--)
 
 while (s[n] != '\0')
 {
 
-
-
-for (i = j ; i >= 0 ; i--)
 {
 s[n] = s[i];
 
