@@ -38,17 +38,19 @@ while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 
 sign = ConocerSigno(s, &i);
 
-while (s[i] == ' ')/*verifica si hay espacios en blanco*/
-{
-        i++;
-}
+
 
 if (s[i] == '\0')
 {
 return (0);
 }
+if (s[i] < '0' || s[i] > '9')
+i++
 
-while (s[i] >= '0' && s[i] <= '9') {
+
+
+while (s[i] >= '0' && s[i] <= '9')/*transformar de caracter a numaro*/
+{
 	num = num * 10 + (s[i] - '0');
 	i++;
 }
