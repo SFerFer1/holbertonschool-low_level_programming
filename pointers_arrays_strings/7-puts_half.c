@@ -27,7 +27,7 @@ _putchar(str[i]);
 }
 else
 {
-if(i > ((j / 2)-1))
+if(i  > ((j / 2)-2))
 {
 _putchar(str[i]);
 }
