@@ -18,17 +18,18 @@ j++;
 while (n < j)
 {
 t = 0;
-for (i = j-1 ; i >= 0 ; i--)
+while (i < j)
 {
 if(t ==0)
 {
 
 cambio = s[i]; 
-s[i] = s[n];
-s[n] = cambio;
+s[i] = s[j];
+s[j] = cambio;
 
 t++;
 }
+i++;
 }
 n++;
 
