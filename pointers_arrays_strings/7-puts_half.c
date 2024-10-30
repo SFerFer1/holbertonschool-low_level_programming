@@ -14,11 +14,14 @@ while (str[j] != '\0')
 j++;
 }
 j--;
-j = j / 2;
+
 
 for (i = 0 ; i < j ; i++)
 {
+if(i >= (j / 2)
+{
 _putchar(str[i]);
+}
 }
 _putchar('\n');
 
