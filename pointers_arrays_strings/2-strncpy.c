@@ -27,7 +27,7 @@ else
 dest++;
 }
 
-*dest = '\0';
+
 
 return (ret);
 }
