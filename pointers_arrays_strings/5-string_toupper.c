@@ -21,5 +21,5 @@ if(n[i] > 96 && n[i] < 123 )
 n[i] =(n[i]-32);
 }
 }
-return (*n);
+return (n);
 }
