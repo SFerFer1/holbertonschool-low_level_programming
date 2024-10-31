@@ -14,12 +14,12 @@ int i;
 
 for (i = 0; i < n ; i++)
 {
- if (*src != '\0')
-{	 
+if (*src != '\0')
+{
 *dest = *src;
 src++;
 }
-else 
+else
 {
 *dest = '\0';
 
