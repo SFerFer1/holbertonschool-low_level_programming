@@ -8,7 +8,7 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int ta1 = 0 ,ta2 = 0; 
+int ta1 = 0, ta2 = 0;
 
 while (*s1 != '\0')
 {
@@ -23,7 +23,7 @@ ta2++;
 s1 = 0;
 s2 = 0;
 
-if( ta1 > ta2 )
+if (ta1 > ta2)
 {
 return (-13);
 }
