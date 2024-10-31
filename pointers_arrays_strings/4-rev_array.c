@@ -12,8 +12,8 @@ int i , n = 0;
 
 for (i = n ; i > 0 ; i--)
 {
-a[n] = a [i]
-n++
+a[n] = a [i];
+n++;
 }
 
 
