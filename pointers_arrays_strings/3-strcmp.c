@@ -8,7 +8,7 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int tama√o1 = 0 ,tam±√o2 =;
+int tama√o1 = 0 ,taa±√o2 
 
 while (*s1 != '\0')
 {
