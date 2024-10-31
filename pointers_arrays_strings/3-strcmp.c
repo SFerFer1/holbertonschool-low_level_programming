@@ -25,11 +25,11 @@ s2 = 0;
 
 if( ta1 > ta2 )
 {
-return (ta1);
+return (ta2);
 }
 else if (ta2 > ta1)
 {
-return (ta2);
+return (ta1);
 }
 else
 {
