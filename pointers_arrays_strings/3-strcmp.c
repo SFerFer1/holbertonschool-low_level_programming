@@ -29,7 +29,7 @@ return (ta2);
 }
 else if (ta2 > ta1)
 {
-return (ta1);
+return ('13');
 }
 else
 {
