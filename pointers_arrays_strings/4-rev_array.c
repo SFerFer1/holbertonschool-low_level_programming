@@ -16,6 +16,7 @@ while (t < (n-1))
  int temp = a[t];
 a[t] = a[(n-1)];
 a[(n-1)] = temp;
+t++;
 }
 
 
