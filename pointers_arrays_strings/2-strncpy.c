@@ -21,12 +21,11 @@ src++;
 else 
 {
 *dest = '\0';
-}
 dest++;
 }
 
-
 }
+
 *dest = '\0';
 
 return (ret);
