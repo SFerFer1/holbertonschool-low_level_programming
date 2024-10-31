@@ -8,7 +8,7 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int tama√o1 = 0 ,tama√±√o2 =;
+int tama√o1 = 0 ,tam±√o2 =;
 
 while (*s1 != '\0')
 {
@@ -18,7 +18,7 @@ tama√o1++;
 while (*s2 != '\0')
 {
 s2++;
-tama√±o++;
+tama±o++;
 }
 s1 = 0;
 s2 = 0;
