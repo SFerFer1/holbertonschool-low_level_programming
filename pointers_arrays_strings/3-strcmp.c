@@ -25,7 +25,7 @@ s2 = 0;
 
 if( ta1 > ta2 )
 {
-return (ta2);
+return (-13);
 }
 else if (ta2 > ta1)
 {
