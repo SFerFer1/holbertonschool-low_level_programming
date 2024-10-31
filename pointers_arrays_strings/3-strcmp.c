@@ -8,26 +8,26 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int tamaÃo1 = 0 ,taa±Ão2 
+int ta1 = 0 ,ta2 = 0; 
 
 while (*s1 != '\0')
 {
 s1++;
-tamaÃo1++;
+ta1++;
 }
 while (*s2 != '\0')
 {
 s2++;
-tama±o++;
+ta2++;
 }
 s1 = 0;
 s2 = 0;
 
-if( s1 > s2 )
+if( ta1 > ta2 )
 {
 return (1);
 }
-else if (s2 > s1)
+else if (ta2 > ta1)
 {
 return (-1);
 }
