@@ -22,9 +22,9 @@ src++;
 else 
 {
 *dest = '\0';
-dest++;
-}
 
+}
+dest++;
 }
 
 *dest = '\0';
