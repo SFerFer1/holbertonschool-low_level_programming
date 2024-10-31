@@ -18,6 +18,6 @@ for ( i = 0 ; i < countn ; i++)
 {
 if(n[i] > 96 && n[i] < 123 )
 }
-n[i] =(n[i]-32)
+n[i] =(n[i]-32);
 return (n)
 }
