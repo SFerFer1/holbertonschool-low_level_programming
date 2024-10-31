@@ -22,7 +22,7 @@ while (i < n)
 *dest = *src;
 dest++;
 src++;
-n++;
+i++;
 }
 
 
