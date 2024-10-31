@@ -13,6 +13,7 @@ int countn = 0;
 while (*n != '\0')
 {
 countn++;
+n++;
 }
 for ( i = 0 ; i < countn ; i++)
 {
