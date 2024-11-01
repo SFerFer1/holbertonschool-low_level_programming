@@ -12,12 +12,17 @@ int ConocerSigno(char *s, int *i)
 	int lastSign = 1; 
     while (s[*i] == '-' || s[*i] == '+')
 {
+if (s[*i] != ' ')
+{
+break;
+}
 	if (s[*i] == '-')
 	{
 	lastSign *= -1;
 	}
 	(*i)++;
 }
+
 return lastSign;
 }
 /**
@@ -39,12 +44,12 @@ while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 sign = ConocerSigno(s, &i);
 
 
-/*
+
 if (s[i] == '\0')
 {
 return (0);
 }
-*/
+
 while (s[i] < '0' || s[i] > '9')
 {
 if (s[i] != ' ') 
