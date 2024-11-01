@@ -9,18 +9,17 @@ char *leet(char *n)
 {
 int i = 0;
 int j = 0;
-char array[] = {'a', 'e', 'o', 't', 'l'};
-
-while (n[i] != '\0')
+char numbers[] = "4433007711";
+char words[] = "aeotlaAEOTLA";   
+for (int i = 0; n[i] != '\0'; i++)
 {
-for (j = 0; array[j] != '\0'; j++)
+for (int j = 0; j < 10; j++)
 {
-if (n[i] == array[j])
+if (n[i] == words[j])
 {
-array[j] -= 32;
+n[i] = numbers[j]
 }
 }
-i++;
 }
 return (n);
 }
