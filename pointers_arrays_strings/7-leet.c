@@ -23,6 +23,6 @@ n[i] = numbers[j];
 }
 }
 }
-n[len - 1] = '\0';
+n[len] = '\0';
 return (n);
 }
