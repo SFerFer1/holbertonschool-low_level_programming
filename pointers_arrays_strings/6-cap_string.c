@@ -9,6 +9,7 @@ char *cap_string(char *n)
 {
 int i = 0;
 char sep[] = " \t\n,;.!?\"(){}";
+int j = 0;
 
 if (n[i] >= 'a' && n[i] <= 'z')
 {
