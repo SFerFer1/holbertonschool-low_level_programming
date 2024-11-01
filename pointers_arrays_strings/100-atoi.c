@@ -9,7 +9,7 @@
 int ConocerSigno(char *s, int *i)
 {
 int lastSign = 1;
-while (s[*i] == '-' || s[*i] == '+')
+while (s[*i] == '-' || s[*i] == '+' || s[*i] == ' ')
 {
 if (s[*i] == '-')
 {
