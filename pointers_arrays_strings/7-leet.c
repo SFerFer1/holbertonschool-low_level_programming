@@ -11,7 +11,7 @@ int i = 0;
 int j = 0;
 char numbers[] = "4307143071";
 char words[] = "aeotlaAEOTLA";
-int len = 0;
+
 for (i = 0; n[i] != '\0'; i++)
 {
 len++;	
@@ -23,6 +23,6 @@ n[i] = numbers[j];
 }
 }
 }
-n[len] = '\0';
+
 return (n);
 }
