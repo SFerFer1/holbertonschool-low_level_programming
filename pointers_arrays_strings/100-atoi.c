@@ -44,10 +44,14 @@ if (s[i] == '\0')
 {
 return (0);
 }
-/*tengo que revisar esta parte
+
 while (s[i] < '0' || s[i] > '9')
+{
+if (s[i] != ' ') {
+break;
+}
+}
 i++;
-*/
 
 
 while (s[i] >= '0' && s[i] <= '9')/*transformar de caracter a numaro*/
