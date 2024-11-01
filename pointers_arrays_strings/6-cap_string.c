@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 /**
 * **cap_string - copy string pointed with cap
 *@n:a char
@@ -8,21 +8,29 @@
 char *cap_string(char *n)
 {
 int i = 0;
+char sep[] = " \t\n,;.!?\"(){}";
 
-
-while (*n != '\0')
+if (n[i] >= 'a' && n[i] <= 'z')
 {
-if(n[i] >=  'a'  && n[i] <= 'z' )
-{
-*n =*n - 32;
+	n[i] -= i32;
 }
-n++;
 
+while (str[i] != '\0')
+		{
+for (j = 0; sep[j] != '\0'; j++)
+	{
+		if (n[i] == sep[j])
+	{
+		if (str[i + 1] >= 'a' && str[i + 1] <= 'z') 
+		{
+			n[i + 1] -= 32; 
+		}
 
-
-}
-*n = '\0';
+	}
+	}
+	i++;
+		}
 return (n);
-
-
 }
+
+
