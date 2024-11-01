@@ -14,7 +14,7 @@ char words[] = "aeotlaAEOTLA";
 
 for (i = 0; n[i] != '\0'; i++)
 {
-len++;	
+	
 for (j = 0; j < 10; j++)
 {
 if (n[i] == words[j])
