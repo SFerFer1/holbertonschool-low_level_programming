@@ -39,12 +39,12 @@ while (s[i] == ' ')/*verifica si hay espacios en blanco*/
 sign = ConocerSigno(s, &i);
 
 
-
+/*
 if (s[i] == '\0')
 {
 return (0);
 }
-
+*/
 while (s[i] < '0' || s[i] > '9')
 {
 if (s[i] != ' ') 
