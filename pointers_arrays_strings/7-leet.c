@@ -17,7 +17,7 @@ for (j = 0; j < 10; j++)
 {
 if (n[i] == words[j])
 {
-n[i] = numbers[j]
+n[i] = numbers[j];
 }
 }
 }
