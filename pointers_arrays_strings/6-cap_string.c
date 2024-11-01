@@ -12,16 +12,16 @@ char sep[] = " \t\n,;.!?\"(){}";
 
 if (n[i] >= 'a' && n[i] <= 'z')
 {
-	n[i] -= i32;
+	n[i] -= 32;
 }
 
-while (str[i] != '\0')
+while (n[i] != '\0')
 		{
 for (j = 0; sep[j] != '\0'; j++)
 	{
 		if (n[i] == sep[j])
 	{
-		if (str[i + 1] >= 'a' && str[i + 1] <= 'z') 
+		if (n[i + 1] >= 'a' && n[i + 1] <= 'z') 
 		{
 			n[i + 1] -= 32; 
 		}
