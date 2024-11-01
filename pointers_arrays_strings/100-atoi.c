@@ -48,6 +48,14 @@ while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
 i++;
 }
 
+
+while ( !(s[i] >= '0' && s[i] <= '9'))
+i++;
+
+
+
+
+
 while (s[i] >= '0' && s[i] <= '9')/*transformar de caracter a numaro*/
 {
 num = num * 10 + (s[i] - '0');
