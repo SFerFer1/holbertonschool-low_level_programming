@@ -22,6 +22,6 @@ n[i] = numbers[j];
 }
 }
 }
-*n = '\0';
+
 return (n);
 }
