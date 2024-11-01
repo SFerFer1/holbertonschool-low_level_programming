@@ -12,17 +12,14 @@ int ConocerSigno(char *s, int *i)
 	int lastSign = 1; 
     while (s[*i] == '-' || s[*i] == '+')
 {
-if (s[*i] != ' ')
-{
-break;
-}
+
 	if (s[*i] == '-')
 	{
 	lastSign *= -1;
 	}
-	
+(*i)++;	
 }
-(*i)++;
+
 return lastSign;
 }
 /**
