@@ -1,4 +1,6 @@
 #include "main.h"
+#define INT_MAX 2147483647
+#define INT_MIN (-2147483648)
 /**
 *  ConocerSigno - saber el signo y devolverlo por -1
 *@s:a char
@@ -48,8 +50,16 @@ while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
 i++;
 }
 
-while (s[i] >= '0' && s[i] <= '9')/*transformar de caracter a numaro*/
+while (s[i] >= '0' && s[i] <= '9')
 {
+if (num > (INT_MAX - (s[i] - '0')) / 10)
+{
+return (sign == 1) ? INT_MAX : INT_MIN;
+}
+
+
+
+
 num = num * 10 + (s[i] - '0');
 i++;
 }
