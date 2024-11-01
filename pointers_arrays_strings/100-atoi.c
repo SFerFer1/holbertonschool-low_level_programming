@@ -20,9 +20,9 @@ break;
 	{
 	lastSign *= -1;
 	}
-	(*i)++;
+	
 }
-
+(*i)++;
 return lastSign;
 }
 /**
