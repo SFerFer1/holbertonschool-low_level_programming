@@ -19,7 +19,8 @@ for (n = 0; accept[n] != '\0'; n++)
 {
 if (s[i] == accept[n])
 {
-t = s[i];
+t++;
+return &s[i];
 break;
 }
 }
@@ -29,6 +30,6 @@ if (t != 0)
 {
 return (NULL);
 }
-return (&t);
+
 }
 
