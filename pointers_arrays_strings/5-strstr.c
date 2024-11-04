@@ -29,7 +29,7 @@ contador2++;
 
 }
 
-if (haystack[i] == ' ' || haystack[i] == ', ')
+if (haystack[i] == ' ' || haystack[i] == ',')
 {
 contador = 0;
 }
