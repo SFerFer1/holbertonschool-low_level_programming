@@ -13,5 +13,5 @@ void print_diagsums(int *a, int size)
 
 int [size][size];
 
-printf("%d", [0][2]);
+printf("%d", [a][2]);
 }
