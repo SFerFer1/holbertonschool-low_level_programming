@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <stdio.h>
 #include "main.h"
 /**
 * print_diagsums - make a chess board
@@ -12,5 +13,5 @@ void print_diagsums(int *a, int size)
 
 int [size][size];
 
-printf("%d", square[0][2]);
+printf("%d", [0][2]);
 }
