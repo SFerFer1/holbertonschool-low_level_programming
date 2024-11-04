@@ -12,14 +12,15 @@ int i = 0;
 int n = 0;
 unsigned int t;
 int e = 0;
-while (s[i] == '\0')
+while (accept[i] == '\0')
 {
 n = 0;
-while (accept[e] == '\0')
+while (s[e] == '\0')
 {
 if (s[i] == accept[e])
+{
 n++;
-
+}
 if (n == 1)
 {
 t++;
