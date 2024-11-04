@@ -12,5 +12,5 @@ void print_diagsums(int *a, int size)
 
 int square[size][size];
 
-
+printf("%d", square[0][2]);
 }
