@@ -18,6 +18,8 @@ n = 0;
 while (accept[e] == '\0')
 {
 if (s[i] == accept[e])
+n++;
+
 if (n == 1)
 {
 t++;
