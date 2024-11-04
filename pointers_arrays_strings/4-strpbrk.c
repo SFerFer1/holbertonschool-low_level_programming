@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 /**
 *  *_strpbrk - return number bytes ignitial segment
