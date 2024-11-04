@@ -29,6 +29,6 @@ if (t != 0)
 {
 return (NULL);
 }
-return (t);
+return (&t);
 }
 
