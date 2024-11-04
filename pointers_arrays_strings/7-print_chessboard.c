@@ -8,8 +8,8 @@
 */
 void print_chessboard(char ch (*a)[8])
 {
+int ch[a][8]
 printf("%d", ch[0][2]);
-
 
 
 }
