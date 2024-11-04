@@ -18,7 +18,7 @@ n = 0;
 while (accept[e] == '\0')
 {
 
-if (n > 0)
+if (n ==1)
 {
 t++;
 }
