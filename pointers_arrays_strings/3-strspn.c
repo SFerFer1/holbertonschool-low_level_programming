@@ -19,7 +19,7 @@ e = 0;
 
 while (s[e] == '\0')
 {
-if (s[i] == accept[e])
+if (s[e] == accept[i])
 {
 n++;
 }
