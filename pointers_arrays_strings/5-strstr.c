@@ -15,9 +15,6 @@ for (n = 0; needle[n] != '\0'; n++)
 {
 nlargo++;
 }
-
-
-
 for (i = 0; haystack[i] != '\0'; i++)
 {
 
@@ -31,22 +28,20 @@ if (haystack[i] == needle[n])
 contador2++;
 
 }
-{
+
 if (haystack[i] == ' ' || haystack[i] == ', ')
 {
 contador = 0
 }
 contador++
-}
 
-{
 if (contador2 == nlargo)
+{
 return (&haystack[i]);
-
 }
 }
 }
 }
-
+}
 return (NULL);
 }
