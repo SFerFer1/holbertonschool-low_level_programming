@@ -1,4 +1,4 @@
-
+#include <stddef.h>
 #include "main.h"
 /**
 * *_strchr - print n of a string
