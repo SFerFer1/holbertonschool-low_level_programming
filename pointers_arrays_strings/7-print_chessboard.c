@@ -9,9 +9,9 @@
 void print_chessboard(char (*a)[8])
 {
 int i, n;
-int siempre8= 8;
+int siempre8 = 8;
 
-for (i = 0; i < siempre8; i++) 
+for (i = 0; i < siempre8; i++)
 {
 for (n = 0; n < 8; n++)
 {
