@@ -1,4 +1,4 @@
-#define NULL ((void *)0)
+
 #include "main.h"
 /**
 * *_strchr - print n of a string
