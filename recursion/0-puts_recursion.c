@@ -18,7 +18,7 @@ i++;
 
 for(i = 0 ; i < n ; i++)
 {
-putchar(s[i]);
+_putchar(s[i]);
 }
 
 }
