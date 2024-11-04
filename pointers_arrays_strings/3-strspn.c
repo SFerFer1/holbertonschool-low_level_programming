@@ -15,6 +15,7 @@ int e = 0;
 while (accept[i] == '\0')
 {
 n = 0;
+e = ;
 while (s[e] == '\0')
 {
 if (s[i] == accept[e])
