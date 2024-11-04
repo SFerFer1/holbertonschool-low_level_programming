@@ -31,9 +31,9 @@ contador2++;
 
 if (haystack[i] == ' ' || haystack[i] == ', ')
 {
-contador = 0
+contador = 0;
 }
-contador++
+contador++;
 
 if (contador2 == nlargo)
 {
