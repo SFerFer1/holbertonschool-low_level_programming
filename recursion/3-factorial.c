@@ -7,7 +7,7 @@
 */
 int factorial(int n)
 {
+numero = numero * factorial(numero-1)
 
-
-return (numero * factorial(numero-1));
+return (numero);
 }
