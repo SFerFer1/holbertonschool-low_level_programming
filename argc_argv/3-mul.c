@@ -10,8 +10,11 @@
 int main( int argc, char *argv[])
 {
 int resultado;
-char error["Error"];
+char error["Error\"];
 int i;
+int a = atoi(argv[1]);
+int b = atoi(argv[2]);
+
 
 (void)argv
 if ( argc > 3)
