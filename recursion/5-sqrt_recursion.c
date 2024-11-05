@@ -18,5 +18,6 @@ if (raiz > n)
 return (-1);
 }
 raiz = _sqrt_recursion(n);
-}
 
+return(raiz + 1);
+}
