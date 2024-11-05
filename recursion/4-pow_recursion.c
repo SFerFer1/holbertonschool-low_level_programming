@@ -18,11 +18,11 @@ else
 if ( y > 0)
 {
 x =  x *x;
-factorial(y - 1)
+factorial(y - 1);
 }
 else
 {
-return(x)
+return(x);
 }
 
 }
