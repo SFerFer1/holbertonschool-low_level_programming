@@ -7,7 +7,7 @@
 *Return: int
 *
 */
-int main( int a ,int b)
+int main( int argc, char *argv[])
 {
 int resultado;
 char error["Error"];
@@ -23,6 +23,8 @@ _putchar(error[i]);
 }
 else
 {
+int a = atoi(argv[1]);
+int b = atoi(argv[2]);
 resultado = a *b;
 printf("%d\n", resultado);
 
