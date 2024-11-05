@@ -10,11 +10,8 @@ int _pow_recursion(int x, int y)
 {
 if ( y < x )
 {
-return (-1);
+return (-1)
 }
-else
-{
-
 if ( y > 0)
 {
 x =  x *x;
@@ -23,8 +20,6 @@ factorial(y - 1);
 else
 {
 return(x);
-}
-
 }
 
 }
