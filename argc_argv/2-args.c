@@ -12,7 +12,7 @@ int i = 0;
 int n = 0;
 
 
-while(n < argc)
+while (n < argc)
 {
 for (i = 0; argv[n][i] != '\0'; i++)
 {
