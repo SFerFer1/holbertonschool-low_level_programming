@@ -10,6 +10,8 @@ int main(int argc, char *argv[], int a ,int b)
 {
 int resultado;
 char error["Error"];
+int i;
+
 (void)argv
 if ( argc > 3)
 {
@@ -21,8 +23,8 @@ _putchar(error[i]);
 else
 {
 resultado = a *b;
-_putchar(resultado);
-_putchar('\n');
+printf("%d\n", resultado);
+
 }
 return (0)
 }
