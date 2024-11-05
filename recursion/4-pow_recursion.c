@@ -18,7 +18,7 @@ if ( y == 1)
 return (x);
 }
 
-x =_pow_recursion(x *x, y - 1);
+x =x *_pow_recursion(x, y - 1);
 
 
 
