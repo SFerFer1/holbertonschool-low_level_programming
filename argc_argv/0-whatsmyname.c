@@ -7,7 +7,9 @@
 */
 int main (int argc,char *argv[])
 {
-for (int i = 0; argv[0][i] != '\0'; i++)
+int i = 0;
+
+for ( i = 0; argv[0][i] != '\0'; i++)
 {
 _putchar(argv[0][i]);
 }
