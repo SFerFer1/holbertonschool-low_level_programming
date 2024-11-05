@@ -15,7 +15,7 @@ return (-1);
 
 
 x =  x *x;
-factorial(y - 1);
+_pow_recursion(y - 1);
 
 
 
