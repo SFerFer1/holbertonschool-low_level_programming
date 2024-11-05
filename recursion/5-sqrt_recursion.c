@@ -11,11 +11,11 @@ int raiz;
 
 if (raiz == n)
 {
-return(raiz)
+return(raiz);
 }
 if (raiz > n)
 {
-return (-1)
+return (-1);
 }
 raiz = _sqrt_recursion(n);
 }
