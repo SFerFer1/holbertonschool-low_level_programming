@@ -5,7 +5,7 @@
 *Return: int
 *
 */
-int main ( argv[])
+int main ( char *argv[])
 {
 
 _putchar(\n)
