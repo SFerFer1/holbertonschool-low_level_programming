@@ -11,6 +11,11 @@ int raiz;
 
 raiz = _sqrt_recursion(n);
 
+if (1 == n)
+{
+return(1);
+}
+
 if (raiz == n)
 {
 return(raiz);
