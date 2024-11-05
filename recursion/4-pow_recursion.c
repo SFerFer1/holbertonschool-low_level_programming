@@ -14,10 +14,15 @@ return (-1);
 }
 else
 {
-while (factorial(y - 1) > 0)
-{
 
+if ( y > 0)
+{
 x =  x *x;
+factorial(y - 1)
+}
+else
+{
+return(x)
 }
 
 }
