@@ -11,7 +11,7 @@ int contador;
 if (*s != '\0')
 {
 
-contador = _strlen_recursion(s + 1);
+contador = 1 +  _strlen_recursion(s + 1);
 }
 
 return (contador);
