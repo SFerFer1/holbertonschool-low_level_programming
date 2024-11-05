@@ -17,7 +17,7 @@ else
 while (factorial(y - 1) > 0)
 {
 
-x =  x *_pow_recursion(x - 1);
+x =  x *x;
 }
 
 }
