@@ -14,9 +14,9 @@ return (-1);
 }
 
 
-
-_pow_recursion(y - 1);
 x =  x *x;
+_pow_recursion(x, y - 1);
+
 
 
 return(x);
