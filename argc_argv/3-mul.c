@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *main - return number
 *@argv: a string of string
@@ -6,7 +7,7 @@
 *Return: int
 *
 */
-int main(int argc, char *argv[], int a ,int b)
+int main( int a ,int b)
 {
 int resultado;
 char error["Error"];
