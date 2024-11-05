@@ -14,9 +14,7 @@ if (*s == '\0')
 return (contador);
 }
 
-
 contador++;
-_puts_recursion(s + 1);
-
+_strlen_recursion(s + 1);
 
 }
