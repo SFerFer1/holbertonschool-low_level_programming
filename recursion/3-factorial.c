@@ -7,13 +7,13 @@
 */
 int factorial(int n)
 {
-if (numero <= 1)
+if (n <= 1)
 {
 return (1);
 }
 else
 {
-numero = numero * factorial(numero-1);
-return (numero);
+n = n * factorial(n-1);
+return (n);
 }
 }
