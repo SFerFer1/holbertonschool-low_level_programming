@@ -5,7 +5,7 @@
 *Return: int
 *
 */
-int main (int argc,char *argv[])
+int main (char *argv[])
 {
 int i = 0;
 
