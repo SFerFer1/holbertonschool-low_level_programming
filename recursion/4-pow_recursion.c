@@ -12,13 +12,13 @@ if ( y < x )
 {
 return (-1);
 }
-if ( y > 0)
-{
+
+
 x =  x *x;
 factorial(y - 1);
-}
-else
-{
+
+
+
 return(x);
 }
 
