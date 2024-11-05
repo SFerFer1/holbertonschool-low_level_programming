@@ -6,7 +6,7 @@
 *Return: int
 *
 */
-int main(int argc, char *argv[] int a ,int b)
+int main(int argc, char *argv[], int a ,int b)
 {
 int resultado;
 char error["Error"];
@@ -21,7 +21,7 @@ _putchar(error[i]);
 else
 {
 resultado = a *b;
-_putchar('resultado');
+_putchar(resultado);
 _putchar('\n');
 }
 return (0)
