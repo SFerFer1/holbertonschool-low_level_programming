@@ -16,7 +16,7 @@ int b = atoi(argv[2]);
 
 
 
-if (argc != 3)
+if (argc  > 3 || argc = 1)
 {
 printf("Error\n");
 return (1);
