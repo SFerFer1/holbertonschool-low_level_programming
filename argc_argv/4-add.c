@@ -1,6 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+
+
+int esnumero(int argc, char *argv[])
+{
+int n = 1;
+while (n < argc)
+{
+int i = 0;
+
+while (argv[n][i] != '\0') {
+if (argv[n][i] < '0' || argv[n][i] > '9')
+{
+return 0;
+}
+i++;
+}
+return 1;
+
+}
+
+}
+
 /**
 *main - return number
 *@argv: a string of string
@@ -11,32 +34,16 @@
 int main(int argc, char *argv[])
 {
 int validate = 0;
-int n = 0;
 int i = 0;
 int resultado = 0;
 
-while (n < argc)
-{
-for (i = 0; argv[n][i] != '\0'; i++)
-{
-if (argv[n][i] >= '0' && argv[n][i] <= '9')
-{
-validate = 1;
-}
-else
-{
-validate = 0;
-break;
-}
-}
-n++;
-}
+
 if (argc == 0)
 {
 printf("0\n");
 return(0);
 }
-else if (validate == 0)
+else if (esnumero(argc, argv) == 0)
 {
 printf("Error\n");
 return (1);
