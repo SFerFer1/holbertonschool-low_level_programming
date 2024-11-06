@@ -18,12 +18,12 @@ int _sqrt_helper(int n)
 */
 int _sqrt_recursion(int n,int raiz )
 {
-
-
+/*
 if (n < 0)
 {
 return -1;
 }
+*/
 
 if (n == 0 || n == 1)
 {
