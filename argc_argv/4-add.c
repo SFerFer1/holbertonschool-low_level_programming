@@ -15,15 +15,17 @@ int n = 1;
 while (n < argc)
 {
 int i = 0;
-
-while (argv[n][i] != '\0') {
+int n = 0;
+while (argv[n][i] != '\0')
+{
 if (!isdigit(argv[n][i]))
 {
 return (0);
 }
 i++;
-}
 
+}
+n++;
 }
 return (1);
 }
