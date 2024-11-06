@@ -46,7 +46,7 @@ if (argc == 1)
 printf("0\n");
 return(0);
 }
-else if (esnumero(argc, argv) == 0)
+else if (esnumero(argc, argv) == 1)
 {
 printf("Error\n");
 return (1);
