@@ -5,26 +5,28 @@
 *  Return: int
 *
 */
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n,int raiz )
 {
 int raiz;
 
-raiz = _sqrt_recursion(n);
-
-if (1 == n)
+if (n < 0)
 {
-return(1);
+return -1;
 }
 
-if (raiz == n)
+if (n == 0 || n == 1)
 {
-return(raiz);
-}
-if (raiz > n)
-{
-return (-1);
+return n;
 }
 
-
-return(raiz + 1);
+if (raiz * raiz == n)
+{
+return raiz;
+}
+else if (raiz * raiz > n)
+ {
+return -1;
+ }
+ 
+return _sqrt_recursion(n, raiz + 1);
 }
