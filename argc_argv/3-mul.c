@@ -18,7 +18,7 @@ int b = atoi(argv[2]);
 
 
 
-if ( argc > 2)
+if ( argc > 3 && argc > 1)
 {
 for (i = 0; error[i] != '\0'; i++)
 {
