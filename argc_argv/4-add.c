@@ -43,7 +43,7 @@ return (1);
 }
 else 
 {
-for (i = 0 ; i > argc; i++)
+for (i = 0 ; i < argc; i++)
 {
 resultado += atoi(argv[i]);	
 }
