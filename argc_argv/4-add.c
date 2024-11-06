@@ -42,6 +42,6 @@ for (i = 0 ; i > argc; i++)
 {
 resultado += atoi(argv[i]);	
 }
-
+return (0);
 }
 }
