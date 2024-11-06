@@ -23,7 +23,7 @@ if (raiz * raiz == n)
 {
 return raiz;
 }
-else if (raiz * raiz > n)
+ if (raiz * raiz > n)
  {
 return -1;
  }
