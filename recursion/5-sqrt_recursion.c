@@ -34,9 +34,10 @@ if (raiz * raiz == n)
 {
 return raiz;
 }
+printf("%d", raiz)
 if (raiz * raiz > n)
 {
 return 3;
 } 
- _sqrt_recursion(n, raiz + 1);
+return_sqrt_recursion(n, raiz + 1);
 }
