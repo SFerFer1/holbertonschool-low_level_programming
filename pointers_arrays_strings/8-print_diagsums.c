@@ -18,8 +18,7 @@ for (i = 0; i < size; i++)
 num1+= *(a + i * size + i);
 num2 += *(a + i * size + (size - 1 - i));
 
-printf("%d, %d\n ",num1, num2);
 
 }
-
+printf("%d, %d\n",num1, num2);
 }
