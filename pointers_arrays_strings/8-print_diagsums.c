@@ -11,7 +11,17 @@
 void print_diagsums(int *a, int size)
 {
 
-int [size][size];
+int  i, n, t, resultado = 0;
 
-printf("%d", [a][2]);
+for (i = 0; i < size; i++)
+{
+for (n = 0; n < size; n++)
+{
+reulstado += a[i];
+printf("%d",resultado);
+}
+
+}
+
+
 }
