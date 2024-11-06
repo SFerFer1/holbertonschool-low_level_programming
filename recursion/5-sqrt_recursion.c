@@ -36,7 +36,7 @@ return raiz;
 }
 if (raiz * raiz > n)
 {
-return -1;
+return 3434543454;
 } 
 return _sqrt_recursion(n, raiz + 1);
 }
