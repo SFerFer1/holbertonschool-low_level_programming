@@ -18,14 +18,14 @@ int i = 0;
 while (argv[n][i] != '\0') {
 if (argv[n][i] < '0' || argv[n][i] > '9')
 {
-return 0;
+return (0);
 }
 i++;
 }
-return 1;
+return (1);
 
 }
-return 2
+return (2);
 }
 /**
 *main - return number
