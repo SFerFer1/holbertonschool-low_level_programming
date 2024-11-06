@@ -7,7 +7,7 @@
 */
 int _sqrt_recursion(int n,int raiz )
 {
-int raiz;
+
 
 if (n < 0)
 {
