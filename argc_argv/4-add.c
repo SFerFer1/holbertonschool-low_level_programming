@@ -56,6 +56,7 @@ for (i = 1 ; i < argc; i++)
 {
 resultado += atoi(argv[i]);	
 }
-return (0);
+printf("%d\n", resultado);
+return (resultado);
 }
 }
