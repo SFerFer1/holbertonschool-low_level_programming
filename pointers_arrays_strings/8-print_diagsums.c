@@ -17,7 +17,7 @@ for (i = 0; i < size; i++)
 {
 for (n = 0; n < size; n++)
 {
-reulstado += a[i];
+resulstado += a[i];
 printf("%d",resultado);
 }
 
