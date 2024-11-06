@@ -6,7 +6,7 @@
 *  Return: int
 *
 */
-int _sqrt_recursion(int n,int raiz )
+int _sqrt_helper(int n,int raiz )
 {
 /*
 if (n < 0)
@@ -26,16 +26,16 @@ return raiz;
 }
 else if (raiz * raiz > n)
 {
-return 3;
+return -1;
 } 
-return _sqrt_recursion(n, raiz + 1);
+return _sqrt_helper(n, raiz + 1);
 }
 
-int _sqrt_helper(int n)
+int _sqrt_recursion(int n)
 {
     /*if (n < 0)
     {
         return -1;
     }*/
-    return _sqrt_recursion(n, 0);
+    return _sqrt_helper(n, 0);
 }
