@@ -3,7 +3,13 @@
 #include <stdlib.h>
 
 
-
+/**
+*esnumero - return si 1 si es numero
+*@argv: a string of string
+*@argc: a int
+*Return: int
+*
+*/
 int esnumero(int argc, char *argv[])
 {
 int n = 1;
@@ -33,7 +39,6 @@ return 1;
 */
 int main(int argc, char *argv[])
 {
-int validate = 0;
 int i = 0;
 int resultado = 0;
 
