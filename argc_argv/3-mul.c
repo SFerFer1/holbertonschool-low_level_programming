@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int resultado;
-char error[7]"Error\n";
+char error[7]="Error\n";
 int i;
 int a = atoi(argv[1]);
 int b = atoi(argv[2]);
