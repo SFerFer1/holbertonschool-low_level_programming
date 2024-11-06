@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 *esnumero - return si 1 si es numero
 *@argv: a string of string
@@ -16,7 +17,7 @@ while (n < argc)
 int i = 0;
 
 while (argv[n][i] != '\0') {
-if (argv[n][i] < '0' || argv[n][i] > '9')
+if (!isdigit(argv[n][i]))
 {
 return (0);
 }
