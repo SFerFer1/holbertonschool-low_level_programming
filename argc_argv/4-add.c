@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-
 /**
 *esnumero - return si 1 si es numero
 *@argv: a string of string
@@ -27,9 +25,8 @@ i++;
 return 1;
 
 }
-
+return 2
 }
-
 /**
 *main - return number
 *@argv: a string of string
