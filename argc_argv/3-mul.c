@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 /**
 *main - return number
 *@argv: a string of string
