@@ -1,6 +1,5 @@
 #include "main.h"
-
-
+#include <stdio.h>
 
 int _sqrt_helper(int n)
 {
@@ -34,7 +33,7 @@ if (raiz * raiz == n)
 {
 return raiz;
 }
-printf("%d", raiz)
+printf("%d", raiz);
 if (raiz * raiz > n)
 {
 return 3;
