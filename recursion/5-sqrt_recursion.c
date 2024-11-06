@@ -1,11 +1,22 @@
 #include "main.h"
+
+
+
+int _sqrt_recursion(int n)
+{
+    if (n < 0)
+    {
+        return -1;
+    }
+    return _sqrt_helper(n, 0);
+}
 /**
 *  _sqrt_recursion - factorial
 *@n:an int
 *  Return: int
 *
 */
-int _sqrt_recursion(int n,int raiz )
+int _sqrt_helper(int n,int raiz )
 {
 
 
@@ -27,5 +38,5 @@ if (raiz * raiz > n)
 {
 return -1;
 } 
-return _sqrt_recursion(n, raiz + 1);
+return _sqrt_helper(n, raiz + 1);
 }
