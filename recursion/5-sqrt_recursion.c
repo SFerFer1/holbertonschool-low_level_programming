@@ -1,15 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
-int _sqrt_helper(int n)
-{
-    /*if (n < 0)
-    {
-        return -1;
-    }*/
-    return _sqrt_recursion(n, 0);
-}
-/**
+/*
 *  _sqrt_recursion - factorial
 *@n:an int
 *  Return: int
@@ -39,4 +30,13 @@ if (raiz * raiz > n)
 return 3;
 } 
 return _sqrt_recursion(n, raiz + 1);
+}
+
+int _sqrt_helper(int n)
+{
+    /*if (n < 0)
+    {
+        return -1;
+    }*/
+    return _sqrt_recursion(n, 0);
 }
