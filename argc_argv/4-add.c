@@ -19,7 +19,7 @@ while (n < argc)
 {
 for (i = 0; argv[n][i] != '\0'; i++)
 {
-if (argv[n][i] >= 0 && argv[n][i] <= 9)
+if (argv[n][i] >= '0' && argv[n][i] <= '9')
 {
 validate = 1;
 }
