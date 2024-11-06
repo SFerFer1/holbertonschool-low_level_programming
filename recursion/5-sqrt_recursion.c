@@ -24,8 +24,7 @@ if (raiz * raiz == n)
 {
 return raiz;
 }
-printf("%d", raiz);
-if (raiz * raiz > n)
+else if (raiz * raiz > n)
 {
 return 3;
 } 
