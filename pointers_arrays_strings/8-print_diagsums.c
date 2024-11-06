@@ -11,17 +11,15 @@
 void print_diagsums(int *a, int size)
 {
 
-int  i, n, resultado = 0;
+int  i, num1 = 0, num2 = 0;
 
 for (i = 0; i < size; i++)
 {
-for (n = 0; n < size; n++)
-{
-resultado += a[i];
-printf("%d",resultado);
-}
+num1+= *(a + i * size + i);
+num2 += *(a + i * size + (size - 1 - i));
+
+printf("%d, %d\n ",num1, num2);
 
 }
-
 
 }
