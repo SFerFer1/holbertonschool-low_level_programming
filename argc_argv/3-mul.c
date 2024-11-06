@@ -11,8 +11,8 @@
 int main(int argc, char *argv[])
 {
 int resultado;
-int a = atoi(argv[1]);
-int b = atoi(argv[2]);
+int a;
+int b;
 
 
 
