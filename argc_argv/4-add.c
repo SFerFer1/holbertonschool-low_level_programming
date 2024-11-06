@@ -23,6 +23,11 @@ if (argv[n][i] >= 0 && argv[n][i] <= 9)
 {
 validate = 1;
 }
+else
+{
+validate = 1;
+break;
+}
 }
 n++;
 }
