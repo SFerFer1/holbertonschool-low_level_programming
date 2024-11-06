@@ -11,8 +11,6 @@
 int main(int argc, char *argv[])
 {
 int resultado;
-char error[7]="Error\n";
-int i;
 int a = atoi(argv[1]);
 int b = atoi(argv[2]);
 
@@ -20,11 +18,8 @@ int b = atoi(argv[2]);
 
 if (argc != 3)
 {
-for (i = 0; error[i] != '\0'; i++)
-{
-_putchar(error[i]);
+printf("Error\n");
 return (1);
-}
 }
 else
 {
