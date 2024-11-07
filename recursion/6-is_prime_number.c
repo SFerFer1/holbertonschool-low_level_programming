@@ -15,12 +15,12 @@ if (n == 0 || n == 1 || n < 0)
 return (0);
 }
 
-if ((n/numero)%2 == 0 )
+if ((n / numero) % 2 == 0)
 {
 
 return (1);
 }
-else if (numero *numero> n)
+else if (numero * numero > n)
 {
 return (0);
 }
@@ -35,5 +35,5 @@ return (helper(n, numero + 1));
  */
 int is_prime_number(int n)
 {
-return helper(n,2);
+return (helper(n, 2));
 }
