@@ -17,6 +17,7 @@ return (0);
 
 if (numero *numero == n)
 {
+printf("hola");
 return (1);
 }
 else if (numero *numero> n)
