@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-/*
-*_sqrt_helper - hace el resto
-*@n:an int
-*@raiz: an int
-*  Return: int
-*
-*/
+/**
+ * _sqrt_helper - Encuentra la raíz cuadrada de un número de forma recursiva.
+ * @n: El número al cual se le calculará la raíz cuadrada.
+ * @raiz: El valor que se utiliza para comprobar si es la raíz cuadrada de n.
+ *
+ * Return: La raíz cuadrada de n si la encuentra, o -.
+ */
 int _sqrt_helper(int n, int raiz)
 {
 
@@ -25,7 +25,7 @@ return (-1);
 }
 return (_sqrt_helper(n, raiz + 1));
 }
-/*
+/**
 *_sqrt_recursion - le da a helper el valor 0
 *@n:an int
 *
