@@ -34,5 +34,5 @@ return (helper(n, numero + 1));
  */
 int is_prime_number(int n)
 {
-return helper(n,2)
+return helper(n,2);
 }
