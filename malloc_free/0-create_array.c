@@ -17,8 +17,13 @@ char *b;
 if (size == 0)
 return (NULL);
 
-b = malloc(sizeof(c) * size);
+b = malloc(sizeof(char) * size);
 
-free(b);
+
+ for (i = 0; i < size; i++)
+{
+b[i] = c;
+}
+
 return (b);
 }
