@@ -24,7 +24,7 @@ s2 = "";
 while (s1[largo] != '\0')
 largo++;
 
-while (s2[largo] != '\0')
+while (s2[largo2] != '\0')
 largo2++;
 
 resultado  = malloc((largo + largo2) +1);
@@ -37,7 +37,7 @@ for (i = 0; i < largo; i++)
 resultado[i] = s1[i];
 }
 
-for (i = 0; n < largo2; i++, n++)
+for (n = 0; n < largo2; i++, n++)
 {
 resultado[i] = s2[n];
 }
