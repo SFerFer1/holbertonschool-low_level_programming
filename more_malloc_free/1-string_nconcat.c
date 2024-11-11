@@ -43,14 +43,16 @@ resultado[i] = s2[t];
 }
 resultado[i] = '\0';
 }
-else 
+else
+{
 for (n = 0; t < n; i++, t++)
 {
 resultado[i] = s2[t];
 }
-
-return (resultado);
+resultado[i] = '\0';
 }
 
+}
 
+return (resultado);
 }
