@@ -8,14 +8,11 @@
 *
 *Return: null f str = NULL
 */
-void *malloc_checked(unsigned int b)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-void *ptr = malloc(b);
 
 
-if (ptr == NULL)
-{
-exit(98);
-}
-return (ptr);
+
+
+
 }
