@@ -25,9 +25,9 @@ int main(void)
 struct dog  dog1;
 
 dog dog1 
-dog1.name ="Blacky"
-dog1.age = "3.5"
-dog1.owner = "Mark"
+dog1.name ="Blacky";
+dog1.age = "3.5";
+dog1.owner = "Mark";
 
 printf("%s",dog1.name);
 printf("%.2f",dog1.age);
