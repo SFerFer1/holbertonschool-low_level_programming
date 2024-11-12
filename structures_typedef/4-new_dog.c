@@ -11,18 +11,25 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-if (new_dog == NULL)
+dog_t dog1;
+
+
+if (name == NULL || owner == NULL)
 {
 return NULL;
 }
 
-dog dog1;
+  dog1 = malloc(sizeof(dog_t));
+
+
+
+if (dog1 == NULL)
+{
+return NULL;
+}
 
 dog->.name =name;
 dog1->age = age;
 dog1->owner = owner;
-
-
-
-
+return (dog1)
 }
