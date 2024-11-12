@@ -37,7 +37,7 @@ resultado[i] = s1[i];
 }
 if (n >= largo2)
 {
-for (n = 0; t < largo2; i++, t++)
+for (t = 0; t < largo2; i++, t++)
 {
 resultado[i] = s2[t];
 }
@@ -45,7 +45,7 @@ resultado[i] = '\0';
 }
 else
 {
-for (n = 0; t < n; i++, t++)
+for (t = 0; t < n; i++, t++)
 {
 resultado[i] = s2[t];
 }
