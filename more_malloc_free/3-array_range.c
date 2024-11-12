@@ -21,7 +21,7 @@ return (NULL);
 
 size = (max - min);
 
-ret = malloc(size *sizeof(int) + 1);
+ret = malloc(size *sizeof(int));
 if (ret == NULL)
 return (NULL);
 
