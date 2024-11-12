@@ -2,18 +2,17 @@
 #include <stddef.h>
 #include "main.h"
 /**
-* malloc_checked -returns 2 dimencional array
+* string_nconcat - concate nate 1 strina and n chars of a second
 *
-*@b: a int
+*@s1: string 1
+*@s2: string 2
+*@n:  how much of string 2 is writen
 *
-*Return: null f str = NULL
+*Return: if dont work NULL
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int largo = 0;
-unsigned int largo2 = 0;
-unsigned int i;
-unsigned int t;
+unsigned int largo = 0, largo2 = 0, i, t
 char *resultado;
 
 if (s1 == NULL)
@@ -22,10 +21,8 @@ if (s2 == NULL)
 s2 = "";
 while (s1[largo] != '\0')
 largo++;
-
 while (s2[largo2] != '\0')
 largo2++;
-
 resultado  = malloc((largo + largo2) +1);
 
 if (resultado == NULL)
@@ -51,7 +48,6 @@ resultado[i] = s2[t];
 }
 resultado[i] = '\0';
 }
-
 
 return (resultado);
 }
