@@ -26,7 +26,6 @@ largo2++;
 resultado  = malloc((largo + largo2) +1);
 
 if (resultado == NULL)
-free (resultado);	
 return (NULL);
 
 for (i = 0; i < largo; i++)
