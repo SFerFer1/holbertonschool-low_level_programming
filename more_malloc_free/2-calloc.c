@@ -20,7 +20,7 @@ return (NULL);
 ret = malloc((nmemb *size)+1);
 
 for (i = 0 ; i < nmemb; i++)
-ret[i] = 0
+ret[i] = 0;
 
 return (ret);
 }
