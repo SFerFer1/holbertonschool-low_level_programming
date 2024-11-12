@@ -48,6 +48,6 @@ resultado[i] = s2[t];
 }
 resultado[i] = '\0';
 }
-
+free (resultado);
 return (resultado);
 }
