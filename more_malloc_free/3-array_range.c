@@ -16,10 +16,10 @@ int ret[1000000];
 int *space;
 int i;
 int *realret = &ret[1000000];
-
+/*
 if (min > max)
 return (NULL);
-
+*/
 space = malloc(size + 1);
 if (space == NULL)
 return (NULL);
