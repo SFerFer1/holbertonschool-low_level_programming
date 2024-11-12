@@ -32,6 +32,7 @@ for (n = 0; n < i; n++)
 {
 free(figura[n]);
 }
+free(figura);
 return (NULL);
 }
 
