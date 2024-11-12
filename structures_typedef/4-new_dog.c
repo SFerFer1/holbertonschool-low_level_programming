@@ -28,7 +28,7 @@ if (dog1 == NULL)
 return NULL;
 }
 
-dog1->.name =name;
+dog1->name =name;
 dog1->age = age;
 dog1->owner = owner;
 return (dog1);
