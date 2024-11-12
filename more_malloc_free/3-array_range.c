@@ -29,5 +29,5 @@ ret[i] = min;
 
 }
 
-return (ret);
+return (*ret);
 }
