@@ -15,14 +15,14 @@ if (d == NULL)
 exit(0);
 }
 if (d->name == NULL)
-printf("Name: (nil)");
+printf("Name: (nil)\n");
 else
-printf("Name: %s", d->name);
-printf("Age: %f", d->age);
+printf("Name: %si\n", d->name);
+printf("Age: %f\n", d->age);
 if (d->owner == NULL)
-printf("Owner: (nil)");
+printf("Owner: (nil)\n");
 else
-printf("Owner: %s", d->owner);
+printf("Owner: %s\n", d->owner);
 
 
 }
