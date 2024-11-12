@@ -11,17 +11,18 @@
 */
 int *array_range(int min, int max)
 {
-int size = ((max - min) + 1);
-int ret[1000000];
-int *space;
+int size;
+int *ret;
 int i;
-int *realret = &ret[1000000];
-/*
+
 if (min > max)
 return (NULL);
-*/
-space = malloc(size + 1);
-if (space == NULL)
+
+
+ret =(max - min) + 1;
+
+ret = malloc(size + 1);
+if (ret == NULL)
 return (NULL);
 
 for (i = 0; min <= max ; min++ , i++)
@@ -30,5 +31,5 @@ ret[i] = min;
 
 }
 
-return (realret);
+return (ret);
 }
