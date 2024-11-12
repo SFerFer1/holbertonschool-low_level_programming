@@ -15,7 +15,7 @@ int size = ((max - min) + 1);
 int ret[10000000];
 int *space;
 int i;
-int *realret = & ret
+int *realret = &ret;
 
 if (min > max)
 return (NULL);
