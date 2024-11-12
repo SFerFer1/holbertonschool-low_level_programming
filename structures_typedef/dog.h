@@ -1,12 +1,13 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * dog- is a dog
- * @name: the name of the dog
- * @age: the age of the dog
- * @owner: the owner of the dog
+ * struct dog - Representa la información de un perro
+ * @name: El nombre del perro.
+ * @age: La edad del perro.
+ * @owner: El nombre del dueño del perro.
  *
- * Description: i dont know
+ * Descripción: Esta estructura almacena los detalles de un perro,
+ * incluyendo su nombre, edad y el dueño que lo posee.
  */
 struct dog
 {
