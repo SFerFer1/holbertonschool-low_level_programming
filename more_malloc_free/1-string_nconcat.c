@@ -42,7 +42,7 @@ resultado[i] = '\0';
 }
 else
 {
-for (t = t; t < n; i++, t++)
+for (t; t < n; i++, t++)
 {
 resultado[i] = s2[t];
 }
