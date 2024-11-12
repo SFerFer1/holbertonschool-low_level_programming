@@ -14,7 +14,7 @@ float age;
 char *owner;
 };
 
-#include "main.h"
+
 /**
  * main - show dog
  * 
