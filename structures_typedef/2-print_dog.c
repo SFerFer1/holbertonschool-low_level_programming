@@ -17,15 +17,15 @@ exit(0);
 if (d->name == NULL)
 printf("Name: (nil)");
 else
-printf("Name: %s\n", dog1->name);
+printf("Name: %s\n", d->name);
 if (d.age == NULL)
 printf("Age: (nil)");
 else
-printf("Age: %.2f\n", dog1.age);
+printf("Age: %.2f\n", d->age);
 if (d->owner == NULL)
 printf("Owner: (nil)");
 else
-printf("Owner: %s\n", dog1->owner);
+printf("Owner: %s\n", d->owner);
 
 
 }
