@@ -1,4 +1,5 @@
 #include "dog.h"
+#include<stdio.h>
 #include<stdlib.h>
 /**
  * init_dog - say if a random number is positive or negative
