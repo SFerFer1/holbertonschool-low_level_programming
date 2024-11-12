@@ -22,10 +22,18 @@ figura = malloc(height * sizeof(int *));
 if (figura == NULL)
 return (NULL);
 
-
 for (i = 0; i < height; i++)
 {
 figura[i] = malloc(width * sizeof(int));
+
+if (figura[i] == NULL)
+{
+for (n = 0; n < i; n++)
+{
+free(figura[n]);
+}
+}
+
 }
 for (i = 0; i < height; i++)
 {
