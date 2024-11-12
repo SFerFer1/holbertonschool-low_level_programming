@@ -11,14 +11,14 @@
  *
  *  Return:  tamanio de string
  */
-int tamanio(const char *str) {
-    int count = 0;
-
+int tamanio(const char *str)
+{
+int count = 0;
 while (str[count] != '\0')
 {
 count++;
 }
-return count;
+return (count);
 }
 /**
  * new_dog - printe un perro
@@ -39,6 +39,7 @@ return (NULL);
 }
 dog1 = malloc(sizeof(dog_t));
 if (dog1 == NULL)
+
 return (NULL);
 
 dog1->name = malloc(tamanio(owner) + 1);
@@ -53,9 +54,10 @@ dog1->name[i] = name[i];
 
 dog1->age = age;
 
-dog1->owner = malloc(tamanio(owner)+ 1);
+dog1->owner = malloc(tamanio(owner) + 1);
 if (dog1->owner == NULL)
 {
+free(dog1->name);
 free(dog1->owner);
 free(dog1);
 return (NULL);
