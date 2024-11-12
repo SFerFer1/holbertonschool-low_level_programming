@@ -11,10 +11,11 @@ void free_dog(dog_t *d)
 {
 
 if (d == NULL)
-retuen (NULL);
+{
+exit (0);
+}
 
 free(d->name);
-free(d->age);
 free(d->owner);
 free(d);
 
