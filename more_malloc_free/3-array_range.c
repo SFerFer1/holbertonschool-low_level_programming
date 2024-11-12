@@ -21,7 +21,7 @@ return (NULL);
 
 size = (max - min);
 
-ret = malloc(size *sizeof(int));
+ret = malloc(size *sizeof(int) + 1);
 if (ret == NULL)
 return (NULL);
 
@@ -30,6 +30,7 @@ for (i = 0; min <= max ; min++, i++)
 ret[i] = min;
 
 }
+ret[i] = '\0';
 
 return (ret);
 }
