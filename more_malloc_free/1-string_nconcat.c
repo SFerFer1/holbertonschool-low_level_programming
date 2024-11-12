@@ -26,7 +26,7 @@ largo2++;
 if (n >= largo2)
 resultado  = malloc((largo + largo2) +1);
 else
-resultado  = malloc((largo + n) +1);
+resultado  = malloc((largo + n) + 1);
 if (resultado == NULL)
 return (NULL);
 for (i = 0; i < largo; i++)
