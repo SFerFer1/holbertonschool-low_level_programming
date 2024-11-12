@@ -60,7 +60,7 @@ free(dog1->owner);
 free(dog1);
 return (NULL);
 }
-for (int i = 0; i <= tamanio(owner); i++)
+for (i = 0; i <= tamanio(owner); i++)
 dog1->owner[i] = owner[i];
 
 return (dog1);
