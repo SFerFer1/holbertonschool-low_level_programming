@@ -31,6 +31,6 @@ return (NULL);
 dog1->name = name;
 dog1->age = age;
 dog1->owner = owner;
-printf("My name is %s, I am %.2f, and my owner is %s\n", d->name, d->age, d->owner);
+printf("My name is %s, I am %.2f, and my owner is %s\n", dog1->name, dog1->age, dog1->owner);
 return (dog1);
 }
