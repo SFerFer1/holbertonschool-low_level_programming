@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
  * dog- is a dog 
@@ -22,11 +21,10 @@ char *owner;
  */
 int main(void)
 {
-struct dog  dog1;
+struct dog dog1;
 
-dog dog1 
 dog1.name ="Blacky";
-dog1.age = "3.5";
+dog1.age = 3.5;
 dog1.owner = "Mark";
 
 printf("%s",dog1.name);
