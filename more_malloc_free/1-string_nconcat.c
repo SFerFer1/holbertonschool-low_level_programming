@@ -52,7 +52,6 @@ resultado[i] = s2[t];
 resultado[i] = '\0';
 }
 
-}
 
 return (resultado);
 }
