@@ -12,7 +12,7 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int largo = 0, largo2 = 0, i, t
+unsigned int largo = 0, largo2 = 0, i, t;
 char *resultado;
 
 if (s1 == NULL)
@@ -42,7 +42,7 @@ resultado[i] = '\0';
 }
 else
 {
-for (t = 0; t < n; i++, t++)
+for (t = t; t < n; i++, t++)
 {
 resultado[i] = s2[t];
 }
