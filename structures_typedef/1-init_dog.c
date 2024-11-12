@@ -1,4 +1,5 @@
 #include "dog.h"
+#include<stdlib.h>
 /**
  * init_dog - say if a random number is positive or negative
  * 
@@ -10,6 +11,9 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+if (d == NULL)
+exit (OK)
+
 
 d->name = name;
 d->age = age;
