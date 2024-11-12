@@ -37,10 +37,8 @@ return (NULL);
 }
 dog1 = malloc(sizeof(dog_t));
 if (dog1 == NULL)
-{
-free(dog1);
 return (NULL);
-}
+
 
 dog1->name = name;
 dog1->name = malloc(tamanio(owner) + 1);
