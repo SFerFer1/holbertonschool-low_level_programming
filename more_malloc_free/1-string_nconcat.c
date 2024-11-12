@@ -24,10 +24,11 @@ largo++;
 while (s2[largo2] != '\0')
 largo2++;
 resultado  = malloc((largo + largo2) +1);
-
 if (resultado == NULL)
+{
+free (resultado);	
 return (NULL);
-
+}
 for (i = 0; i < largo; i++)
 {
 resultado[i] = s1[i];
