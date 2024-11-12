@@ -1,7 +1,25 @@
 #include "dog.h"
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
+
+
+
+/**
+ * tamanio -  dice el tamanio de un string
+ *
+ *@str:  el string
+ *
+ *  Return:  tamanio de string
+ */
+int tamanio(const char *str) {
+    int count = 0;
+
+while (str[count] != '\0')
+{
+count++;
+}
+return count;
+}
 /**
  * new_dog - printe un perro
  *
@@ -13,20 +31,19 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *dog1;
-
 if (name == NULL || owner == NULL)
 {
 return (NULL);
 }
 dog1 = malloc(sizeof(dog_t));
-
 if (dog1 == NULL)
 {
 free(dog1);
 return (NULL);
 }
+
 dog1->name = name;
-dog1->name = malloc(strlen(name) + 1);
+dog1->name = malloc(tamanio(owner) + 1);
 if (dog1->name == NULL)
 {
 free(dog1->name);
@@ -35,7 +52,7 @@ return (NULL);
 }
 dog1->age = age;
 dog1->owner = owner;
-dog1->owner = malloc(strlen(owner) + 1);
+dog1->owner = malloc(tamanio(owner)+ 1);
 if (dog1->owner == NULL)
 {
 free(dog1->owner);
