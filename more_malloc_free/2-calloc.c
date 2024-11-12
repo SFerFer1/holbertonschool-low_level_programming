@@ -17,9 +17,9 @@ unsigned int i;
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-ret = malloc((nmemb *size)+1);
+ret = malloc(nmemb *size);
 
-for (i = 0 ; i < nmemb; i++)
+for (i = 0 ; i < (nmemb *size); i++)
 ret[i] = 0;
 
 return (ret);
