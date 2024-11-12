@@ -48,7 +48,7 @@ free(dog1->name);
 free(dog1);
 return (NULL);
 }
-for (i = 0; i <= name_len; i++)
+for (i = 0; i <= tamanio(owner); i++)
 dog1->name[i] = name[i];
 
 dog1->age = age;
@@ -60,7 +60,7 @@ free(dog1->owner);
 free(dog1);
 return (NULL);
 }
-for (int i = 0; i <= owner_len; i++)
+for (int i = 0; i <= tamanio(owner); i++)
 dog1->owner[i] = owner[i];
 
 return (dog1);
