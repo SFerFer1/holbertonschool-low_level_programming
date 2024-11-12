@@ -20,9 +20,9 @@ int main(void)
 {
 struct dog dog1 = {"Blacky", 3.5, "Mark"};
 
-printf('%s',dog1.name);
-printf('%f',dog1.age);
-printf('%d',dog1.owner);
+printf("%s",dog1.name);
+printf("%f",dog1.age);
+printf("%d",dog1.owner);
 return (1);
 }
 
