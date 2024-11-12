@@ -23,6 +23,10 @@ largo++;
 
 t = malloc(sizeof(char) * (largo + 1));
 
+if (t == NULL)
+return (NULL);
+
+
 for (i = 0; i < largo; i++)
 t[i] = str[i];
 
