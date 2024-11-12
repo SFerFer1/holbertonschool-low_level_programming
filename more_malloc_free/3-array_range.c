@@ -19,13 +19,13 @@ if (min > max)
 return (NULL);
 
 
-size = (max - min) + 1;
+size = (max - min);
 
-ret = malloc(size * sizeof(int) + 1);
+ret = malloc(size *sizeof(int) + 1);
 if (ret == NULL)
 return (NULL);
 
-for (i = 0; min <= max ; min++ , i++)
+for (i = 0; min <= max ; min++, i++)
 {
 ret[i] = min;
 
