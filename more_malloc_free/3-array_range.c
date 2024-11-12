@@ -19,7 +19,7 @@ if (min > max)
 return (NULL);
 
 
-ret =(max - min) + 1;
+size = (max - min) + 1;
 
 ret = malloc(size + 1);
 if (ret == NULL)
