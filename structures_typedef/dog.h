@@ -22,7 +22,10 @@ char *owner;
  */
 int main(void)
 {
- dog dog1 = {"Blacky", 3.5, "Mark"};
+dog dog1 
+dog1.name ="Blacky"
+dog1.age = "3.5"
+dog1.owner = "Mark"
 
 printf("%s",dog1.name);
 printf("%.2f",dog1.age);
