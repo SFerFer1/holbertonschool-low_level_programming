@@ -10,14 +10,11 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-int i;
-int n = 0;
+size_t i;
 
-while (array[n] != '\0')
-n++;
 
 for (i = 0; i < n; i++)
-action(array[i],size,array);
+action(array[i]);
 
 
 }
