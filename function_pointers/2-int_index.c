@@ -20,7 +20,7 @@ for (i = 0 ; i < size; i++)
 {
 
 if (cmp(array[i]) == 1)
-return (array[i]);
+return (i);
 
 
 
