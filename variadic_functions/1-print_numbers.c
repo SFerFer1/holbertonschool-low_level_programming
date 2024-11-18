@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * print_numbers -returns a pointer to a newly allocated space in memory
  *
