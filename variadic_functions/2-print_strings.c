@@ -23,12 +23,12 @@ if ( i > 0)
 {
 if (separator == NULL)
 {
-printf('nil');
+printf("nil");
 }
 {
 printf("%s", separator);
 }
-printf("%d", va_arg(args, char));
+printf("%d", va_arg(args, int));
 }
 
 va_end(args);
