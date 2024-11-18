@@ -16,7 +16,7 @@ while (n < '\0')
 n++;
 
 for (i = 0; i < n; i++)
-f(&name[i]);
+_putchar(f(&name[i]));
 
 
 
