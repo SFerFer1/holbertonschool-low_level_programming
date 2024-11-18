@@ -10,12 +10,11 @@
 void print_name(char *name, void (*f)(char *))
 {
 int i = 0;
-int n = 0;
 
-while (name[n] != '\0')
-n++;
-
-for (i = 0; i < n; i++)
+while (name[i] != '\0')
+{
 f(&name[i]);
+i++;
+}
 
 }
