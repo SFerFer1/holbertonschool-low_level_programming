@@ -10,7 +10,7 @@
 void print_name(char *name, void (*f)(char *))
 {
 int i = 0;
-int i = 0;
+int n = 0;
 
 while (n < '\0')
 n++;
