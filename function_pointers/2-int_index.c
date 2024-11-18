@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * array_iterator -returns a pointer to a newly allocated space in memory
+ * int_index -returns a pointer to a newly allocated space in memory
  *
  *@array: a string
  *@cmp: a funtion
@@ -20,9 +20,8 @@ for (i = 0 ; i < size; i++)
 {
 
 if (cmp(array[i]) == 1)
-{
 return (array[i]);
-}
+
 
 
 }
