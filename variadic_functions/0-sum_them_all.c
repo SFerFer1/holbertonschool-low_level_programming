@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "variadic_functions"
 #include <stdarg.h>
 /**
  * sum_them_all -returns a pointer to a newly allocated space in memory
