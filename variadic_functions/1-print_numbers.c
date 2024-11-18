@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * print_numbers -returns a pointer to a newly allocated space in memory
  *
@@ -13,11 +14,10 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-unsigned int resultado = 0;
 va_list args;
 
 if (separator == NULL)
-exit (NULL);
+exit (0);
 
 va_start(args, separator);
 
