@@ -16,7 +16,7 @@ while (n < '\0')
 n++;
 
 for (i; i < n; n++)
-f(&name[n]);
+f(&name[i]);
 
 
 
