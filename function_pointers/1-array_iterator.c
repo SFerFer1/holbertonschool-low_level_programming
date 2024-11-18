@@ -20,7 +20,7 @@ n++;
 
 
 for (i = 0; i < n; i++)
-action(array[i],size);
+action(size);
 
 
 
