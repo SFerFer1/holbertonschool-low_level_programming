@@ -9,6 +9,13 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+int i = 0;
+int i = 0;
+
+while (n < '\0')
+n++;
+
+for (i; i < n; n++)
 f(&name[n]);
 
 
