@@ -16,14 +16,8 @@ int n = 0;
 while (array[n] != '\0')
 n++;
 
-
-
-
 for (i = 0; i < n; i++)
-action(size);
-
-
-
+action(array[i],size,array);
 
 
 }
