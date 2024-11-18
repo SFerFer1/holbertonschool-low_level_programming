@@ -25,15 +25,15 @@ if (separator == NULL)
 {
 printf("nil");
 }
+else
 {
-printf("%c", separator[i]);
+printf("%s", separator);
 }
-printf("%d", va_arg(args, int));
+printf("%s", va_arg(args, char*));
 }
 
 va_end(args);
 
 printf("\n");
-
 }
 }
