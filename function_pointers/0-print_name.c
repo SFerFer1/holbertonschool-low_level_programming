@@ -15,7 +15,7 @@ int n = 0;
 while (n < '\0')
 n++;
 
-for (i; i < n; n++)
+for (i = 0; i < n; n++)
 f(&name[i]);
 
 
