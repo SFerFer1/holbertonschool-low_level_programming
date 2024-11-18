@@ -12,7 +12,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 int i;
 int n = 0;
-int t = size;
+
 while (array[n] != '\0')
 n++;
 
@@ -20,7 +20,7 @@ n++;
 
 
 for (i = 0; i < n; i++)
-action(array[i]);
+action(array[i],size);
 
 
 
