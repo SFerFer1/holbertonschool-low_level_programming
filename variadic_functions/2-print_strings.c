@@ -26,7 +26,7 @@ if (separator == NULL)
 printf("nil");
 }
 {
-printf("%s", separator);
+printf("%c", separator[i]);
 }
 printf("%d", va_arg(args, int));
 }
