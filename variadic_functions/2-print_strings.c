@@ -30,10 +30,7 @@ else if (separator == NULL)
 {
 printf("%s", va_arg(args, char*));
 }
-else if (va_arg(args, char*) == NULL)
-{
-printf("nil");
-}
+
 else
 {
 printf("%s", va_arg(args, char*));
