@@ -27,13 +27,14 @@ printf("nil");
 }
 else
 {
-printf("%s", separator);
-}
 printf("%s", va_arg(args, char*));
+
+}
+printf("%s", separator);
 }
 
 va_end(args);
 
-printf("\n");
+
 }
 }
