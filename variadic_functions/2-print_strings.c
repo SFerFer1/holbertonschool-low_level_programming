@@ -28,7 +28,7 @@ else  if ( i < n && i  > 0)
 {
 printf("%s", separator);
 
-else if (va_arg(args, char*) == NULL)
+if (va_arg(args, char*) == NULL)
 {
 printf("(nil)");
 }
