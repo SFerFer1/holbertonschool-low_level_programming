@@ -33,10 +33,6 @@ printf("%s", va_arg(args, char*));
 else
 {
 printf("%s", va_arg(args, char*));
-if (va_arg(args, char*) == NULL)
-printf("nil");
-
-else
 printf("%s", separator);
 }
 }
