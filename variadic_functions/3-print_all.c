@@ -12,7 +12,7 @@ unsigned int i = 0;
 va_list args;
 const char *str;
 
-va_start(format, 4);
+va_start(format, format);
 
 while(i <= 4)
 {
