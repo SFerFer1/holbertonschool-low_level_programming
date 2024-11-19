@@ -20,7 +20,7 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 
-if ( i == (n - 1) )
+if ( i == n )
 {
 printf("%s", va_arg(args, char*));
 }		
