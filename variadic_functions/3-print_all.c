@@ -1,3 +1,7 @@
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
+#include "variadic_functions.h"
 /**
  * print_all -returns a pointer to a newly allocated space in memory
  *
