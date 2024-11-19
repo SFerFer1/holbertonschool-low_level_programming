@@ -28,7 +28,7 @@ printf("%s", va_arg(args, char*));
 else if (separator == NULL)
 {
 printf("%s", va_arg(args, char*));
-printf("nil");
+
 }
 else
 {
