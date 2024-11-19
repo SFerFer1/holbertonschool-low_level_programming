@@ -26,15 +26,12 @@ printf("%s", va_arg(args, char*));
 }
 else  if ( i < (n - 1))
 {
-if (va_arg(args, char*) == NULL)
-{
-printf("(nil)");
-}
-else
-{
+
 printf("%s", va_arg(args, char*));
+
 printf("%s", separator);
-}
+
+
 }
 else
 printf("%s", va_arg(args, char*));
