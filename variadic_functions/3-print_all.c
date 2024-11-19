@@ -8,11 +8,11 @@
  */
 void print_all(const char * const format, ...)
 {
-unsigned int i;
+unsigned int i = 0;
 va_list args;
 const char *str;
 
-va_start(args, 4);
+va_start(format, 4);
 
 while(i <= 4)
 {
