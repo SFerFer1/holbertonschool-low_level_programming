@@ -32,8 +32,6 @@ printf("%s", va_arg(args, char*));
 else
 printf("(nil)");
 
-}
-
 
 
 }
