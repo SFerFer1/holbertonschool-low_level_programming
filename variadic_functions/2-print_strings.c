@@ -32,7 +32,7 @@ printf("%s", va_arg(args, char*));
 }
 else if (va_arg(args, char*) == NULL)
 {
-printf("nil")
+printf("nil");
 }
 else
 {
