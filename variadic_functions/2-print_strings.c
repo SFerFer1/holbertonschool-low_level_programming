@@ -19,14 +19,15 @@ va_list args;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-if ( i  ==  0  && i != n)
+
+if ( i == n )
+{
+printf("%s", va_arg(args, char*));
+}		
+else if ( i  ==  0  && i != n)
 {
 printf("%s", va_arg(args, char*));
 printf("%s", separator);
-}
-else if ( i == n )
-{
-printf("%s", va_arg(args, char*));
 }
 else if (separator == NULL)
 {
