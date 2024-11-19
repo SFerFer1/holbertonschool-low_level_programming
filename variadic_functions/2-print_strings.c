@@ -22,7 +22,7 @@ for (i = 0; i < (n + 1); i++)
 if ( i > 0)
 va_arg(args, char*);
 {
-if ( i == n )
+else if ( i == n )
 {
 printf("%s", va_arg(args, char*));
 }
