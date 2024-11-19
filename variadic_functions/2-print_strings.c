@@ -24,16 +24,14 @@ for (i = 0; i < n; i++)
 {
 printf("%s", va_arg(args, char*));
 }
-else  if ( i < n && i  > 0)
+else  if ( i < n && i  > 0  &&  va_arg(args, char*) == NULL)
 {
 printf("%s", separator);
-
-if (va_arg(args, char*) == NULL)
-{
-printf("(nil)");
+printf("%s", va_arg(args, char*));
 }
 else
-printf("%s", va_arg(args, char*));
+printf("(nil)");
+
 }
 
 
