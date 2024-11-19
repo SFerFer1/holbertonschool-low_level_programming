@@ -20,22 +20,24 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 	
- if (separator == NULL)
+ if (separator == NULL || i == 0)
 {
 printf("%s", va_arg(args, char*));
 }
-
-else  if ( i < n)
+else  if ( i < n && i  > 0)
 {
-printf("%s", va_arg(args, char*));
 printf("%s", separator);
-}
+
 else if (va_arg(args, char*) == NULL)
 {
 printf("(nil)");
 }
 else
 printf("%s", va_arg(args, char*));
+}
+
+
+
 }
 va_end(args);
 
