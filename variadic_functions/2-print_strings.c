@@ -21,8 +21,8 @@ for (i = 0; i < (n + 1); i++)
 {
 if ( i > 0)
 va_arg(args, char*);
-{
-else if ( i == n )
+
+if ( i == n )
 {
 printf("%s", va_arg(args, char*));
 }
@@ -35,9 +35,9 @@ else
 printf("%s", va_arg(args, char*));
 printf("%s", separator);
 }
-}
 
-va_end(args);
 }
+va_end(args);
+
 printf("\n");
 }
