@@ -18,9 +18,14 @@ while(i <= 4)
 {
 str = va_arg(args, const char*);
 
-
+if (str == NULL)
+{
+str = "(nil)";
+}
+if (i > 0 )
+{
+printf("%s", str);
+}
 
 i++;
 }
-
-
