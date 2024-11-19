@@ -17,7 +17,7 @@ unsigned int i;
 va_list args;
 
 va_start(args, n);
-for (i = 0; i < (n + 1); i++)
+for (i = 0; i <= n; i++)
 {
 if ( i > 0)
 {
