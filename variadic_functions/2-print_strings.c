@@ -24,20 +24,18 @@ for (i = 0; i < n; i++)
 {
 printf("%s", va_arg(args, char*));
 }
+
+if (va_arg(args, char*) == NULL)
+{
+printf("(nil)");
+}
 else  if ( i < (n - 1))
 {
-
 printf("%s", va_arg(args, char*));
-
 printf("%s", separator);
-
-
 }
 else
 printf("%s", va_arg(args, char*));
-
-
-
 }
 va_end(args);
 
