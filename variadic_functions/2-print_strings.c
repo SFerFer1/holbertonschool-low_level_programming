@@ -19,7 +19,7 @@ va_list args;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-if ( i > 0 && i != n)
+if ( i > 0 )
 {
 printf("%s", va_arg(args, char*));
 printf("%s", separator);
@@ -35,7 +35,7 @@ printf("%s", va_arg(args, char*));
 else
 {
 printf("%s", va_arg(args, char*));
-printf("%s", separator);
+
 }
 
 }
