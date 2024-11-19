@@ -24,7 +24,7 @@ for (i = 0; i < n; i++)
 {
 printf("%s", va_arg(args, char*));
 }
-else  if ( i < n && i  > 0  &&  va_arg(args, char*) == NULL)
+else  if ( i < n && i  > 0  &&  va_arg(args, char*) != NULL)
 {
 printf("%s", separator);
 printf("%s", va_arg(args, char*));
