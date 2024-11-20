@@ -32,7 +32,7 @@ switch (format[z])
 		i = va_arg(args, int);
 		printf("%d", i);
 	break;
-	icase 'i':
+	case 'f':
 	f = va_arg(args, double);
 	printf("%f", f);
 	break;
