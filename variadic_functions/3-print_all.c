@@ -12,7 +12,7 @@
  */
 void print_all(const char * const format, ...)
 {
-int z = 0 , i , valido = 1;
+int z = 0 , i;
 va_list args;
 char c;
 
