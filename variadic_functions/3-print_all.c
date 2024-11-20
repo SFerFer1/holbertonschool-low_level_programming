@@ -12,7 +12,7 @@
  */
 void print_all(const char * const format, ...)
 {
-int z = 0 , i;
+int z = 0 , i , z2 = 1;
 va_list args;
 char c;
 
@@ -42,9 +42,10 @@ switch (format[z])
 		printf("%s", str);
 	break;
 }
-if (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's')
+if (format[z2] != '\0' && (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
 printf(", ");
 z++;
+z2++;
 }
 va_end(args);
 printf("\n");
