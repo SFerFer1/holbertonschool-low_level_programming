@@ -12,7 +12,7 @@
  */
 void print_all(const char * const format, ...)
 {
-int z = 0 , i;
+int z = 0 , i , first = 1;
 va_list args;
 char c;
 
@@ -22,8 +22,11 @@ const char *str;
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
-if (z != 0 && (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
+if (first != && (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
+{
 printf(", ");
+first = 0;
+}
 switch (format[z])
 {
 	case 'c':
