@@ -12,25 +12,25 @@
  */
 void print_all(const char * const format, ...)
 {
-int i = 0;
+int z = 0;
 va_list args;
 char *str;
 char c;
 int i;
 float f;
-
+f++;
 va_start(args, format);
-while(format != NULL && format[i] != '\0' )
+while(format != NULL && format[z] != '\0' )
 {
 str = va_arg(args, const char*);
-if(format[i]=="c")
+if(format[z]=='c')
 {
-i =va_arg(args, const char*);
+i = format[z]
 printf("%d", i);
 }
-else if (format[i]=="c")
+else if (format[z]=='c')
 {
-c =va_arg(args, const char*);
+c = format[z]
 printf("%c", c);
 }
 
@@ -41,6 +41,6 @@ printf("%c", c);
 printf("%s", str);
 
 
-i++;
+z++;
 }
 }
