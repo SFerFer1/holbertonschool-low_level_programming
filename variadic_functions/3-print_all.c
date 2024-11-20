@@ -14,14 +14,13 @@ void print_all(const char * const format, ...)
 {
 int z = 0;
 va_list args;
-const char *str;
 char c;
 int i;
 
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
-str = va_arg(args, const char*);
+
 
 switch (format[z])
 {
@@ -33,9 +32,8 @@ switch (format[z])
 		i = va_arg(args, int);
 		printf("%d", i);
 	break;
-
 }
-printf("%s", str);
 z++;
 }
+va_end(args);
 }
