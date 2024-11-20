@@ -16,7 +16,7 @@ int z = 0;
 va_list args;
 char c;
 int i;
-
+float f;
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
@@ -32,6 +32,13 @@ switch (format[z])
 		i = va_arg(args, int);
 		printf("%d", i);
 	break;
+	icase 'i':
+	f = va_arg(args, double);
+	printf("%f", f);
+	break;
+
+
+
 }
 if (format[z] != '\0')
 printf(", ");
