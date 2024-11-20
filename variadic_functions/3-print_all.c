@@ -6,14 +6,14 @@
 /**
  * print_all -returns a pointer to a newly allocated space in memory
  *
- *@n: a string
+ *
  *@format: the string
  *
  *Return: null f str = NULL
  */
 void print_all(const char * const format, ...)
 {
-int z = 0 , i;
+int z = 0, i;
 va_list args;
 char c;
 float f;
@@ -28,25 +28,25 @@ switch (format[z])
 	case 'c':
 		c = va_arg(args, int);
 		printf("%s%c", separador, c);
-		separador=", ";
+		separador = ", ";
 	break;
 	case 'i':
 		i = va_arg(args, int);
 		printf("%s%d", separador, i);
-		separador=", ";
+		separador = ", ";
 	break;
 	case 'f':
 		f = va_arg(args, double);
 		printf("%s%f", separador, f);
-		separador=", ";
+		separador = ", ";
 	break;
 	case 's':
-        	str = va_arg(args, const char*);
+		str = va_arg(args, const char*);
 		if (str == NULL)
-		printf("%s(nil)",separador);
-		if (str !=NULL)
-		printf("%s%s",separador, str);
-		separador=", ";
+		printf("%s(nil)", separador);
+		if (str != NULL)
+		printf("%s%s", separador, str);
+		separador = ", ";
 	break;
 }
 z++;
