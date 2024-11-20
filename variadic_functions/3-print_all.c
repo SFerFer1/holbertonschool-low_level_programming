@@ -12,18 +12,18 @@
  */
 void print_all(const char * const format, ...)
 {
-int z = 0;
+int z = 0 , i;
 va_list args;
 char c;
-int i;
+
 float f;
 const char *str;
+
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
 if (z != 0)
 printf(", ");
-
 switch (format[z])
 {
 	case 'c':
@@ -43,7 +43,6 @@ switch (format[z])
 		printf("%s", str);
 	break;
 }
-
 z++;
 }
 va_end(args);
