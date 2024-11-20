@@ -21,6 +21,8 @@ const char *str;
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
+if (z != '0')
+printf(", ");
 
 switch (format[z])
 {
@@ -41,8 +43,7 @@ switch (format[z])
 		printf("%s", str);
 	break;
 }
-if (format[z] != '\0')
-printf(", ");
+
 z++;
 }
 va_end(args);
