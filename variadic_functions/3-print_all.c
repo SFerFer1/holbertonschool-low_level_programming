@@ -43,7 +43,7 @@ switch (format[z])
 	case 's':
         	str = va_arg(args, const char*);
 		if (str == NULL)
-		printf("(nil)");
+		printf("%s(nil)",separador);
 		if (str !=NULL)
 		printf("%s%s",separador, str);
 		separador=", ";
