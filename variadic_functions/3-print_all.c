@@ -17,8 +17,7 @@ va_list args;
 const char *str;
 char c;
 int i;
-float f;
-f = "2"
+
 
 
 va_start(args, format);
