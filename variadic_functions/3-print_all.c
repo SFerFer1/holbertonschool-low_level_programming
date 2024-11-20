@@ -33,6 +33,8 @@ switch (format[z])
 		printf("%d", i);
 	break;
 }
+if (format[z] != '\0')
+printf(", ");
 z++;
 }
 va_end(args);
