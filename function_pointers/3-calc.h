@@ -9,3 +9,4 @@ typedef struct op
     char *op;
     int (*f)(int a, int b);
 } op_tu;
+int (*get_op_func(char *s))(int, int);
