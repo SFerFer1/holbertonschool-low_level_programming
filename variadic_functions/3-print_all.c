@@ -38,11 +38,12 @@ switch (format[z])
 	break;
 	case 's':
         	str = va_arg(args, const char*);
+		if (str == NULL)
+		printf("(nil)");
 		printf("%s", str);
 	break;
 }
-if (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's')
-if (format[z2] != '\0')
+if (format[z2] != '\0'  &&  (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
 printf(", ");
 z++;
 z2++;
