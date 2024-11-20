@@ -18,6 +18,7 @@ va_list args;
 char c;
 float f;
 const char *str;
+char *separador = "";
 
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
@@ -26,27 +27,29 @@ switch (format[z])
 {
 	case 'c':
 		c = va_arg(args, int);
-		printf("%c", c);
+		printf("%s%c", separador, c);
+		separador=", ";
 	break;
 	case 'i':
 		i = va_arg(args, int);
-		printf("%d", i);
+		printf("%s%d", separador, i);
+		separador=", ";
 	break;
 	case 'f':
 		f = va_arg(args, double);
-		printf("%f", f);
+		printf("%s%f", separador, f);
+		separador=", ";
 	break;
 	case 's':
         	str = va_arg(args, const char*);
 		if (str == NULL)
 		printf("(nil)");
-		printf("%s", str);
+		if (str !=NULL)
+		printf("%s%s",separador, str);
+		separador=", ";
 	break;
 }
-if (format[z2] != '\0'  &&  (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
-printf(", ");
 z++;
-z2++;
 }
 va_end(args);
 printf("\n");
