@@ -1,3 +1,4 @@
+#include "3-calc.h"
 #include <stdio.h>
 /**
  * main- prints the times table up to n

@@ -1,3 +1,4 @@
+#include "3-calc.h"
 /**
  * int_index -returns a pointer to a newly allocated space in memory
  *
