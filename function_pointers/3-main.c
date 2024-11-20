@@ -7,6 +7,6 @@
  */
 void main (void)
 {
-printf("w")
+printf("w");
 
 }
