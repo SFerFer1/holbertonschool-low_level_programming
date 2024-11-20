@@ -6,8 +6,8 @@
  *
  * Return: void
  */
-void main (void)
+int main (void)
 {
 printf("w");
-
+return (0);
 }

@@ -10,21 +10,21 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-switch case (s[0])
+switch (s[0])
 {
-case: '+'
+case '+':
 return (op_add);
 
-case: '-'
+case '-':
 return (op_sub);
 
-case: '*'
+case '*':
 return (op_mul);
 
-case: '/'
+case '/':
 return (op_div);
 
-case: '%'
+case '%':
 return (op_mod);
 
 default:
