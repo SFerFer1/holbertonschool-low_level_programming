@@ -14,11 +14,12 @@ void print_all(const char * const format, ...)
 {
 int z = 0;
 va_list args;
-char *str;
+const char *str;
 char c;
 int i;
 float f;
-f++;
+f = "2"
+
 
 va_start(args, format);
 while(format != NULL && format[z] != '\0' )
