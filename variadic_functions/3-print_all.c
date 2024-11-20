@@ -19,16 +19,15 @@ char c;
 int i;
 
 va_start(args, format);
+while (format != NULL && format[Z] == '\0')
+{
 str = va_arg(args, const char*);
 
-
-switch (str)
+switch (format[z])
 {
-    case 'c': 
-i = 2;
-c="c";
-break;
-default:
+case 'c':
+c = va_arg(args, int);
+printf("%c", c);
 break;
 }
 
@@ -36,8 +35,7 @@ break;
 
 
 
-
-
 printf("%s", str);
 z++;
+}
 }
