@@ -18,24 +18,31 @@ const char *str;
 char c;
 int i;
 
-
-
 va_start(args, format);
-while(format != NULL && format[z] != '\0' )
-{
 str = va_arg(args, const char*);
-if(format[z]=='c')
+switch (format)
 {
-i = format[z];
-printf("%d", i);
+case c:
+breaik;
 }
-else if (format[z]=='c')
+char format = 'c';  // Se define 'format' como un carácter
+
+switch (format)
 {
-c = format[z];
-printf("%c", c);
+    case 'c': 
+i = 2;
+c="c";
+break;
+default:
+break;
 }
+
+
+
+
+
+
 
 printf("%s", str);
 z++;
-}
 }
