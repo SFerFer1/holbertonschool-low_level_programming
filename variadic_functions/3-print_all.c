@@ -22,7 +22,7 @@ const char *str;
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
-if (z != 0 && format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's')
+if (z != 0 && (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
 printf(", ");
 switch (format[z])
 {
