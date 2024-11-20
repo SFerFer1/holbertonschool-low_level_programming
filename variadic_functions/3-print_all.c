@@ -12,24 +12,34 @@
  */
 void print_all(const char * const format, ...)
 {
-unsigned int i = 0;
+int i = 0;
 va_list args;
-const char *str;
+char *str;
+char c;
+int i;
+float f;
 
 va_start(args, format);
-
-while(i <= 4)
+while(format != NULL && format[i] != '\0' )
 {
 str = va_arg(args, const char*);
+if(format[i]=="c")
+{
+i =va_arg(args, const char*);
+printf("%d", i);
+}
+else if (format[i]=="c")
+{
+c =va_arg(args, const char*);
+printf("%c", c);
+}
 
-if (str == NULL)
-{
-str = "(nil)";
-}
-if (i > 0 )
-{
+
+
+
+
 printf("%s", str);
-}
+
 
 i++;
 }
