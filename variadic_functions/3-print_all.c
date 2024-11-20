@@ -20,14 +20,9 @@ int i;
 
 va_start(args, format);
 str = va_arg(args, const char*);
-switch (format)
-{
-case c:
-breaik;
-}
-char format = 'c';  // Se define 'format' como un carácter
 
-switch (format)
+
+switch (str)
 {
     case 'c': 
 i = 2;
