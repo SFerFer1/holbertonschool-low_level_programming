@@ -19,7 +19,7 @@ char c;
 int i;
 
 va_start(args, format);
-while (format != NULL && format[z] == '\0')
+while (format != NULL && format[z] != '\0')
 {
 str = va_arg(args, const char*);
 
