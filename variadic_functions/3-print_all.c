@@ -47,4 +47,5 @@ switch (format[z])
 z++;
 }
 va_end(args);
+printf('\n');
 }
