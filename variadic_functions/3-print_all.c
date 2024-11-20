@@ -17,10 +17,10 @@ va_list args;
 char c;
 int i;
 float f;
+const char *str;
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
-
 
 switch (format[z])
 {
@@ -33,12 +33,13 @@ switch (format[z])
 		printf("%d", i);
 	break;
 	case 'f':
-	f = va_arg(args, double);
-	printf("%f", f);
+		f = va_arg(args, double);
+		printf("%f", f);
 	break;
-
-
-
+	case 's':
+        	str = va_arg(args, const char*);
+		printf("%s", str);
+	break;
 }
 if (format[z] != '\0')
 printf(", ");
