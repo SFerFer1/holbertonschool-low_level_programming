@@ -12,7 +12,7 @@
  */
 void print_all(const char * const format, ...)
 {
-int z = 0 , i , first = 1;
+int z = 0 , i , valido = 1;
 va_list args;
 char c;
 
@@ -22,11 +22,7 @@ const char *str;
 va_start(args, format);
 while (format != NULL && format[z] != '\0')
 {
-if (first != 0 && (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
-{
-printf(", ");
-first = 0;
-}
+
 switch (format[z])
 {
 	case 'c':
@@ -46,6 +42,8 @@ switch (format[z])
 		printf("%s", str);
 	break;
 }
+if (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's')
+printf(", ");
 z++;
 }
 va_end(args);
