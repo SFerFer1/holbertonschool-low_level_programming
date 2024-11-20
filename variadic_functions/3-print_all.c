@@ -41,7 +41,7 @@ switch (format[z])
 		printf("%s", str);
 	break;
 }
-if (format[z2] != '\0' && (strchr("cifs", format[z])))
+if (format[z2] != '\0' && (format[z] == 'c' || format[z] == 'i' || format[z] == 'f' || format[z] == 's'))
 printf(", ");
 z++;
 z2++;
