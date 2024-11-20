@@ -13,7 +13,7 @@
  */
 void print_all(const char * const format, ...)
 {
-int z = 0 , i , z2 = 1;
+int z = 0 , i;
 va_list args;
 char c;
 float f;
