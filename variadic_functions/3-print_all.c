@@ -25,17 +25,16 @@ str = va_arg(args, const char*);
 
 switch (format[z])
 {
-case 'c':
-c = va_arg(args, int);
-printf("%c", c);
-i++;
-break;
+	case 'c':
+		c = va_arg(args, int);
+		printf("%c", c);
+	break;
+	case 'i':
+		i = va_arg(args, int);
+		printf("%d", i);
+	break;
+
 }
-
-
-
-
-
 printf("%s", str);
 z++;
 }
