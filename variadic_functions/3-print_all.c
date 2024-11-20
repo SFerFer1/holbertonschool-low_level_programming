@@ -19,28 +19,23 @@ char c;
 int i;
 float f;
 f++;
+
 va_start(args, format);
 while(format != NULL && format[z] != '\0' )
 {
 str = va_arg(args, const char*);
 if(format[z]=='c')
 {
-i = format[z]
+i = format[z];
 printf("%d", i);
 }
 else if (format[z]=='c')
 {
-c = format[z]
+c = format[z];
 printf("%c", c);
 }
 
-
-
-
-
 printf("%s", str);
-
-
 z++;
 }
 }
