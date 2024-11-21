@@ -9,12 +9,18 @@
 int maini (int argc, char *argv[])
 {
 int num1 = atoi(argv[1]);
+char calculador = argv[2];
 int num2 = atoi(argv[3]);
-
-if (argc >= 5)
+int resultado;
+if (argc != 4)
+{
+printf("Error");
 exit(98);
+}
 
 
+resultado = op_func(num1, num2);
 
-return (0);
+
+return (resulatdo);
 }
