@@ -1,4 +1,4 @@
-
+#include "3-calc.h"
 #include <stdio.h>
 /**
  * main- prints the times table up to n
@@ -8,6 +8,6 @@
  */
 int main (void)
 {
-printf("w");
+
 return (0);
 }
