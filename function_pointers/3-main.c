@@ -21,7 +21,7 @@ exit(98);
 
 resultado = get_op_func(argv[2])(num1, num2);
 
-printf ( "%d" , resultado);
+printf ( "%d\n" , resultado);
 
 return (0);
 }
