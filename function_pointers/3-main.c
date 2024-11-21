@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-int maini (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
 int num1 = atoi(argv[1]);
 int num2 = atoi(argv[3]);
