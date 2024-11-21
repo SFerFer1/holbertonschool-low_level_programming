@@ -11,25 +11,26 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-switch (s[0])
+op_t ops[] =
 {
-case '+':
-return (op_add);
+        {"+", op_add},
+        {"-", op_sub},
+        {"*", op_mul},
+        {"i/", op_div},
+        {"%", op_mod},
+        {NULL, NULL}
+};
+int i;
 
-case '-':
-return (op_sub);
+i = 0;
+while (i < 5)
+{
+if ( ops[i].op == s)
+return (ops[i].f)
 
-case '*':
-return (op_mul);
-
-case '/':
-return (op_div);
-
-case '%':
-return (op_mod);
-
-default:
-return NULL;
+i++;
 }
+return (NULL);
+
 
 }
