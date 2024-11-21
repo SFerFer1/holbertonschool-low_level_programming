@@ -9,11 +9,11 @@
  */
 int maini (int argc, char *argv[])
 {
-int num1* = atoi(argv[1]);
-char calculador = argv[2];
-int num2* = atoi(argv[3]);
+int num1 = atoi(argv[1]);
+char *calculador = argv[2];
+int num2 = atoi(argv[3]);
 int resultado;
-int (*get_op_func(char *s))(int, int);
+
 
 if (argc != 4)
 {
@@ -29,5 +29,7 @@ int (*op_func)(int, int) = get_op_func(argv[2]);
 
 resultado = op_func(num1, num2);
 
-return (resultado);
+printf ( "%d" , resultado);
+
+return (0);
 }
