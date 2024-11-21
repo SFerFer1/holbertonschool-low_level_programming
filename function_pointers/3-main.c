@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main- prints the times table up to n
  * @n: the size of the times table
@@ -8,10 +9,12 @@
  */
 int maini (int argc, char *argv[])
 {
-int num1 = atoi(argv[1]);
+int num1* = atoi(argv[1]);
 char calculador = argv[2];
-int num2 = atoi(argv[3]);
+int num2* = atoi(argv[3]);
 int resultado;
+int (*get_op_func(char *s))(int, int);
+
 if (argc != 4)
 {
 printf("Error");
@@ -19,8 +22,12 @@ exit(98);
 }
 
 
+int (*op_func)(int, int) = get_op_func(argv[2]);
+
+
+
+
 resultado = op_func(num1, num2);
 
-
-return (resulatdo);
+return (resultado);
 }
