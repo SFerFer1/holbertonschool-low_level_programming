@@ -17,7 +17,7 @@ op_t ops[] =
         {"+", op_add},
         {"-", op_sub},
         {"*", op_mul},
-        {"i/", op_div},
+        {"/", op_div},
         {"%", op_mod},
         {NULL, NULL}
 };
