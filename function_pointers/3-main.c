@@ -6,8 +6,15 @@
  *
  * Return: void
  */
-int main (void)
+int maini (int argc, char *argv[])
 {
+int num1 = atoi(argv[1]);
+int num2 = atoi(argv[3]);
+
+if (argc >= 5)
+exit(98);
+
+
 
 return (0);
 }
