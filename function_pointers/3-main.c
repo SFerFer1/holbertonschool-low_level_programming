@@ -21,20 +21,6 @@ printf("Error");
 exit(98);
 }
 
-if (get_op_func(operator) == NULL)
-{
-printf("Error");
-exit(99);
-}
-
-
-if ((strcmp(operator, "/") == 0 || strcmp(operator, "%") == 0) && num2 == 0)
-{
-printf("Error\n");
-exit(100);
-}
-
-
 
 
 resultado = get_op_func(argv[2])(num1, num2);
