@@ -8,7 +8,7 @@
  *
  * Return: void
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int num1;
 int num2;
@@ -25,7 +25,7 @@ num2 = atoi(argv[3]);
 
 resultado = get_op_func(argv[2])(num1, num2);
 
-printf ( "%d\n" , resultado);
+printf("%d\n", resultado);
 
 return (0);
 }
