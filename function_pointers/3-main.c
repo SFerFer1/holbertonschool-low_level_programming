@@ -3,10 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main- prints the times table up to n
- * @n: the size of the times table
+ * main - Entry point for the calculator program.
+ * @argc: Number of arguments passed to the program.
+ * @argv: Array of arguments passed to the program.
  *
- * Return: void
+ * Return: 0 if successful, exit with error code otherwise.
  */
 int main(int argc, char *argv[])
 {
