@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stddef.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * int_index -returns a pointer to a newly allocated space in memory
  *
