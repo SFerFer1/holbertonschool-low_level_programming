@@ -1,25 +1,20 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+
 /**
- * print_dlistint - prints all the elements of a dlistint_t.
+ * dlistint_len- returns the number of elements in a linked list_t list.
  *
  *@h: is the liat_t that reciv.
  *
  *Return:cont.
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 int cont = 0;
 const dlistint_t *current = h;
 
+
 while (current != NULL)
 {
-
-
-printf("%d\n", current->n);
-
 current = current->next;
 cont++;
 }
