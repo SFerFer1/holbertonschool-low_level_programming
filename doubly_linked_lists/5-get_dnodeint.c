@@ -3,7 +3,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * dlistint_t *get_dnodeint_at_index.
+ * dlistint_t *get_dnodeint_at_index-asas.
  *
  * @head: A pointer to the head of the list.
  *

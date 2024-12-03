@@ -19,8 +19,8 @@ dlistint_t *new = NULL;
 
 if (*h == NULL && idx == 0)
 {
-new_node = add_dnodeint(h, n);
-return (new_node);
+new = add_dnodeint(h, n);
+return (new);
 }
 while (current != NULL)
 {
