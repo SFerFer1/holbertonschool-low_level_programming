@@ -39,8 +39,11 @@ return (NULL);
 new->n = n;
 new->next = current;
 new->prev = current->prev;
+if (current->prev != NULL)
 current->prev->next = new;
 current->prev = new;
+if (current == *h)
+*h = new;
 return (new);
 }
 }
