@@ -37,10 +37,10 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
-new->next = current->next;
-new->prev = current;
-current->next->prev = new;
-current->next = new;
+new->next = current;
+new->prev = current->prev;
+current->prev->next = new;
+current->prev = new;
 return (new);
 }
 }
