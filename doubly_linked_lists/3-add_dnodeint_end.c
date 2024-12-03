@@ -2,7 +2,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * dlistint_t *add_dnodeint_end- adds a new node at the beginning of a list_t list.
+ * dlistint_t *add_dnodeint_end- adds a new node .
  *
  * @head: A pointer to the head of the list.
  *
@@ -34,7 +34,7 @@ current = current->next;
 }
 
 current->next = new;
-new->prev = current; 
+new->prev = current;
 }
 return (new);
 }
