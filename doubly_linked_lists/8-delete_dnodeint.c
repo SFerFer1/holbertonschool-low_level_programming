@@ -3,11 +3,10 @@
 #include <string.h>
 #include "lists.h"
 /**
- * dlistint_t *insert_dnodeint_at_index- adds a.
+ * delete_dnodeint_at_index- adds a.
  *
- *@h: A pointer to the head of the list.
- *@idx: A pointer to the head of the list.
- *@n: A string to be duplicated and stored in the new node.
+ *@head: A pointer to the head of the list.
+ *@index: A pointer to the head of the list.
  *
  *Return:cont.
  */
