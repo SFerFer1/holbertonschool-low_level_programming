@@ -3,7 +3,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * dlistint_t *get_dnodeint_at_index- adds a new node at the beginning of a list_t list.
+ * dlistint_t *get_dnodeint_at_index.
  *
  * @head: A pointer to the head of the list.
  *

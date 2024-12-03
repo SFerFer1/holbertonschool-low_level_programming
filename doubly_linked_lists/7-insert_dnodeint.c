@@ -17,18 +17,16 @@ unsigned int cont = 0;
 dlistint_t *current = *h;
 dlistint_t *new = NULL;
 
-if (current == NULL)
-return (NULL);
+if (*h == NULL && idx == 0)
+{
+new_node = add_dnodeint(h, n);
+return (new_node);
+}
 while (current != NULL)
 {
 if (cont == idx)
 {
-if (cont == 0)
-{
-new = add_dnodeint(h, n);
-return (new);
-}
-else if (current->next == NULL)
+if (current->next == NULL)
 {
 new = add_dnodeint_end(h, n);
 return (new);
