@@ -15,18 +15,23 @@ int i = 0;
 int n;
 unsigned int multiplicador = 1;
 unsigned int Total = 0;
+
+if (b == NULL)
+return (0);
+
+
 while (b[i] != '\0')
 {
 i++;
 }
 
-for (n = i - 1; n >= 0;n--)
+for (n = i - 1; n >= 0; n--)
 {
 if (b[n] != '0' && b[n] != '1')
-return 0;
+return (0);
 if (b[n] == '1')
 Total += multiplicador;
-multiplicador *=2;
+multiplicador *= 2;
 }
 return (Total);
 }
