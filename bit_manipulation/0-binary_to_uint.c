@@ -20,11 +20,12 @@ while (b[i] != '\0')
 i++;
 }
 
-for (n = i - 1; n < i;n--)
+for (n = i - 1; n >= 0;n--)
 {
+if (b[n] != '0' && b[n] != '1')
+return 0;
 if (b[n] == '1')
 Total += multiplicador;
-
 multiplicador *=2;
 }
 return (Total);
