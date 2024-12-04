@@ -17,24 +17,22 @@ unsigned int cont = 0;
 dlistint_t *current = *h;
 dlistint_t *new = NULL;
 
-if (*h == NULL && idx == 0)
+if (idx == 0)
 {
 new = add_dnodeint(h, n);
 return (new);
 }
 while (current != NULL)
 {
-if (cont == idx)
-{
-if (current->next == NULL)
+if (current->next == NULL && cont == idx)
 {
 new = add_dnodeint_end(h, n);
 return (new);
 }
-else
+else if (cont == idx)
 {
 new = malloc(sizeof(dlistint_t));
-if (new == NULL)
+if (new == NULL )
 return (NULL);
 new->n = n;
 new->next = current;
@@ -45,7 +43,6 @@ current->prev = new;
 if (current == *h)
 *h = new;
 return (new);
-}
 }
 current = current->next;
 cont++;
