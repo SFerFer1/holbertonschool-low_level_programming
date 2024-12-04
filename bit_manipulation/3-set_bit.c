@@ -1,12 +1,12 @@
 #include <stddef.h>
 #include "main.h"
 /**
-* set_bit-reqa.
+* set_bit-reqaasd.
 *
 *@index: a binari number.
 *@n: a binari number.
 *
-* return: a int 
+* Return: 1 if the operation succeeded, or -1 if an error occurred.
 */
 int set_bit(unsigned long int *n, unsigned int index)
 {
