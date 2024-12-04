@@ -12,7 +12,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 int i = 0;
-multiplicador = 1;
+unsigned int multiplicador = 1;
 unsigned int Total = 0;
 while (b[i] != '\0')
 {
