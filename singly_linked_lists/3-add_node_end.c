@@ -18,7 +18,7 @@ char *str2;
 list_t *current = *head;
 list_t *new;
 
-new = malloc(sizeof(list_t));
+new = malloc(sizeof(20));
 if (new == NULL)
 return (NULL);
 str2 = strdup(str);
