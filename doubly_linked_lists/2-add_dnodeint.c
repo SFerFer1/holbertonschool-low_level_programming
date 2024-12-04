@@ -25,11 +25,10 @@ new->next = *head;
 (*head)->prev = new;
 }
 else
+{
 new->next = NULL;
-
-
+}
 
 *head = new;
-
 return (new);
 }
