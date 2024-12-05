@@ -35,7 +35,6 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL )
 return (NULL);
 new->n = n;
-printf("a");
 new->next = current;
 new->prev = current->prev;
 if (current->prev != NULL)
