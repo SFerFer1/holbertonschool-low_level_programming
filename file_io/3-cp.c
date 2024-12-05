@@ -12,7 +12,8 @@ ssize_t bytes_read, bytes_written;
 
 call_exit(argc, argv, &fd_from, &fd_to);
 
-while ((bytes_read = read(fd_from, buffer, sizeof(buffer))) > 0) {
+while ((bytes_read = read(fd_from, buffer, sizeof(buffer))) > 0)
+{
 bytes_written = write(fd_to, buffer, bytes_read);
 if (bytes_written == -1)
 {
@@ -22,13 +23,15 @@ close(fd_to);
 exit(99);
 }
 }
+
 if (bytes_read == -1)
 {
-
-	close(fd_from);
-	close(fd_to);
-	exit(0);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+close(fd_from);
+close(fd_to);
+exit(98);
 }
+
 if (close(fd_from) == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
