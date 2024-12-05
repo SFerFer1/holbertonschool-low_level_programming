@@ -13,8 +13,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 char *let;
-int let;
 ssize_t readed;
+ssize_t written;
+int fd;
 
 if (filename == NULL)
 return (0);
@@ -23,27 +24,27 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 
-*let = malloc(letters);
+let = malloc(letters);
 if (let == NULL)
 {
 close(fd);
 return (0);
 }
-readed = read(fd, buffer, letters);
+readed = read(fd, let, letters);
 if (readed == -1)
 {
-free(buffer);
+free(let);
 close(fd);
 return (0);
 }
-ssize_t written = write(POSIX, let, readed);
+written = write(STDOUT_FILENO, let, readed);
 if (written == -1 || written != readed)
 {
-free(buffer);
+free(let);
 close(fd);
 return 0;
 }
-free(buffer);
+free(let);
 close(fd);
-return bytesread
+return (readed);
 }
