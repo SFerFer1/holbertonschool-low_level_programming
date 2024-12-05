@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * append_text_to_file - check the code.
  *
  *@filename: Tamao del trianguo.
  *@text_content: Tamao del trianguo.
+ *
  *
  * Return: Always EXIT_SUCCESS.
  */
