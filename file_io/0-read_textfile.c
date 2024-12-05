@@ -7,7 +7,7 @@
  *
  *@filename: Tamao del trianguo.
  *@letters: Tamao del trianguo.
-
+ *
  * Return: Always EXIT_SUCCESS.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -42,7 +42,7 @@ if (written == -1 || written != readed)
 {
 free(let);
 close(fd);
-return 0;
+return (0);
 }
 free(let);
 close(fd);
