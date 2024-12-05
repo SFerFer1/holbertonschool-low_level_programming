@@ -53,7 +53,7 @@ void call_exit(int argc, char *argv[], int *fd_from, int *fd_to)
 	if (*fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
+		exit(0);
 	}
 
 *fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
