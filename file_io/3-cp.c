@@ -27,7 +27,7 @@ if (bytes_read == -1)
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	close(fd_from);
 	close(fd_to);
-	exit(98);
+	exit(0);
 }
 if (close(fd_from) == -1)
 {
@@ -53,7 +53,7 @@ void call_exit(int argc, char *argv[], int *fd_from, int *fd_to)
 	if (*fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(0);
+		exit(98);
 	}
 
 *fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
