@@ -4,6 +4,12 @@
 #include <stdlib.h>
 
 void call_exit(int argc, char *argv[], int *fd_from, int *fd_to);
+/**
+ * main - Entry point of the program that copies a file to another file.
+ * @argc: The number of command line arguments passed to the program.
+ * @argv: An array of strings representing the command line arguments.
+ * Return:Exit status 0 if successful.
+ */
 int main(int argc, char *argv[])
 {
 int fd_from, fd_to;
@@ -44,7 +50,15 @@ exit(100);
 }
 return (0);
 }
-
+/**
+ * call_exit - Verifies the arguments and open.
+ * @argc: The number of command.
+ * @argv: An array of strings representing.
+ * @fd_from: Pointer to the file descriptor.
+ * @fd_to: Pointer to the file descriptor.
+ *
+ * Return:Exit status 97 if the incorrect number of arguments is passed.
+ */
 void call_exit(int argc, char *argv[], int *fd_from, int *fd_to)
 {
 	if (argc != 3)
