@@ -18,7 +18,7 @@ ssize_t bytes_written;
 if (filename == NULL)
 return (-1);
 
-fd = open(filename, O_CREAT | O_WRONLY, 0600);
+fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
 {
 return (-1);
