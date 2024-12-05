@@ -24,7 +24,7 @@ exit(99);
 }
 if (bytes_read == -1)
 {
-	dprintf(STDERR_FILENO, "\n");
+
 	close(fd_from);
 	close(fd_to);
 	exit(0);
