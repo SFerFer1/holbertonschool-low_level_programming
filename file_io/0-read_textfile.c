@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h"
-
+#include "main.h"
 /**
  * read_textfile - check the code.
  *
