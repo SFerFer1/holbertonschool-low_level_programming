@@ -80,6 +80,5 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(*fd_from);
 exit(99);
 }
-close(*fd_from);
-close(*fd_to);
+
 }
