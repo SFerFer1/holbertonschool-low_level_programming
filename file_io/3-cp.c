@@ -77,6 +77,7 @@ void call_exit(int argc, char *argv[], int *fd_from, int *fd_to)
 if (*fd_to == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+if (*fd_from != -1)
 close(*fd_from);
 exit(99);
 }
