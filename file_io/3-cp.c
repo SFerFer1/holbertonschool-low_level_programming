@@ -26,7 +26,7 @@ if (bytes_written == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(fd_from);
 close(fd_to);
-exit(99);
+exit(98);
 }
 }
 
