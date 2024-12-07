@@ -78,7 +78,7 @@ if (*fd_to == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(*fd_from);
-exit(98);
+exit(99);
 }
 
 }
